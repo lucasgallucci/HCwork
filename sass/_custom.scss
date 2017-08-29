@@ -1,0 +1,57 @@
+.custom{
+	.custom-menu{
+		ul{
+			padding: 0;
+			list-style: none;
+			li{
+				margin-bottom: 10px;
+				a{
+					text-decoration: none;
+					color: #333; 
+				}
+			}
+		}
+	}
+
+	.title{
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 15px;
+		padding-bottom: 0px;
+
+		h4{
+			display: inline-block;
+		}
+
+		.checkbox{
+			float: right;
+			text-transform: uppercase;
+			font-size: 11px;
+			label{
+				text-transform: uppercase;
+				font-size: 11px;
+			}
+
+			.switch{
+				top: 5px;
+			}
+		}
+	}
+
+
+	section{
+		margin-bottom: 30px;
+		.list{
+			display: flex;
+			flex-wrap: wrap;
+			div{
+				width: 33.333%;
+				margin: 10px 0;
+				padding-right: 15px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	
+} 

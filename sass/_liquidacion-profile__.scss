@@ -1,0 +1,98 @@
+#liquidacion-profile{
+	header{
+		background: rgb(30,87,153);
+		background: -moz-linear-gradient(45deg, rgba(30,87,153,1) 0%, rgba(125,185,232,1) 100%);
+		background: -webkit-linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 100%);
+		background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+		position: relative;
+		padding: 30px 0;
+		color: white;
+		h3, h4{
+			color: white;
+			margin: 5px 0;
+		}
+
+		h4{
+			font-weight: 300;
+			margin-bottom: 15px;
+			font-size: 15px;
+		}
+
+		img{
+			max-width: 150px;
+			border: 3px white solid;
+		}
+
+		ul{
+			list-style: none;
+			padding: 0;
+			li{
+				display: inline-block;
+				margin: 5px;
+
+				span{
+					margin-right: 3px;
+				}
+			}
+		}
+
+		.redes{
+			li{
+				span{
+					background: rgba(255,255,255,0.4);
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					font-size: 18px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	.sub-header{
+		padding: 10px 0;
+		background: rgb(219,73,73);
+		background: -moz-linear-gradient(45deg, rgba(219,73,73,1) 0%, rgba(234,110,110,1) 100%);
+		background: -webkit-linear-gradient(45deg, rgba(219,73,73,1) 0%,rgba(234,110,110,1) 100%);
+		background: linear-gradient(45deg, rgba(219,73,73,1) 0%,rgba(234,110,110,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db4949', endColorstr='#ea6e6e',GradientType=1 );
+		border-top: 1px solid white;
+		.manager-pic{
+			max-width: 40px;
+			margin-right: 10px;
+			border: 2px solid white;
+		}
+	}
+
+	p{
+		display: inline-block;
+		margin: 10px 0;
+		color: white !important;
+	}
+
+	a{
+		color: white;
+	}
+	.place{
+		display: flex;
+		justify-content: center;
+		span{
+			height: 40px;
+			width: 40px;
+			background: #333;
+			color: #ccc;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			margin-right: 10px; 
+			font-size: 18px;
+			border: 2px solid white;
+		}
+	}
+}

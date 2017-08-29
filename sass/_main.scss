@@ -1,0 +1,133 @@
+.main-menu{
+	ul{
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li{
+			margin: 5pxpx;
+			background: #ddd;
+			flex: 1;
+			padding: 10px;
+			margin: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center; 
+			ul{
+				display: none;
+			}
+		}
+	}
+}
+
+.main{
+	.graph{
+		.ref{
+			list-style: none;
+			padding: 0;
+			li{
+				padding: 5px 0;
+				border-bottom: 1px solid #dfdfdf;
+				span{
+					padding: 2px 4px;			
+					font-size: 11px;
+					border-radius: 3px;
+					background: $color2;
+					color: white;
+				}
+				&:last-child{
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+
+.table-ref{
+		.table{
+			padding: 0;
+		}
+		ul{
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+			list-style: none;
+			
+			padding: 10px 5px;
+			margin: 0;
+			border-top: 1px solid #ededed;
+			padding-left: 30px;
+			li{
+				flex:2;
+				&:first-child{
+					flex: 7;
+				}
+				&:last-child{
+					flex: 1;
+				}
+
+				.options{
+					position: relative;
+					.menu{
+					    position: absolute;
+					    padding: 5px 10px;
+					    z-index: 10;
+					    transform: translate(-50%);
+					    border-radius: 4px;
+					    top: 30px;
+					    min-width: 100px;
+					    background: white;
+					    border: 1px solid #dedede;
+					    &:after{
+					    	content: "";
+						    display: inline-block;
+						    width: 15px;
+						    height: 15px;
+						    background: white;
+						    position: absolute;
+						    top: -3px;
+						    left: 50%;
+						    transform: rotate(45deg) translatex(-50%);
+					    	border-top: 1px solid #dedede;
+    						border-left: 1px solid #dedede;
+					    }
+					    ul{
+					    	padding: 0;
+					    	list-style: none;
+					    	display: block;
+					    	border: none;
+					    	li{
+					    		padding: 5px 0;
+					    		background: white;
+					    		display: block;
+					       	}
+					    }
+					}
+				}
+			}			
+		
+			&.title{
+				background: $color2;
+				padding-left: 10px;
+				li{
+					font-weight: 300;
+					font-size: 13px;
+					text-transform: uppercase;
+					color: white;
+				}
+			}
+
+			&.total{
+				padding-left: 10px;
+				background: lighten($color2, 30%);
+			}
+
+			&.general{
+				padding-left: 10px;
+				background: lighten($color1, 50%);
+				border-top: 1px solid white;
+			}
+		}
+	}

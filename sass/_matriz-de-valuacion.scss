@@ -1,0 +1,72 @@
+#matriz-de-valuacion, #matriz-de-valuacion-alta{
+	th{
+		width:100px;
+		text-align: right;
+		background: $color1;
+		color: white;
+		font-weight: normal;
+	}
+
+	h4{
+		color: $color1;
+		text-transform: uppercase;
+		display: inline-block;
+	}
+
+	.btn-edit{
+		float: right;
+	}
+
+	h5{
+		margin: 20px 0;
+	}
+
+	.matriz{
+		overflow: hidden;
+	}
+	
+	.title{
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: space-between;
+		.actions{
+			display: flex;
+			align-items: center;
+			a{
+				margin-right: 10px;
+				span{
+					font-size: 20px;
+				}
+			}
+		}
+
+	}
+	
+	.grado{
+		display: flex;
+		list-style: none;
+		margin: 10px 0;
+		padding: 10px 0;
+		border-bottom: 1px solid #ddd;
+		&:last-child{
+			border: none;
+		}
+
+		li{
+			flex: 10;
+			margin: 10px;
+			&:first-child, &:last-child{
+				flex: 1;
+				text-align: center;
+				.fa-cog{
+					margin-right: 10px;
+				}
+			}
+		}
+
+		&.title{
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+nav#top-nav{
+	z-index: 999;
+	.user-options{
+		z-index: 999;
+	}
+}
+
+nav#left-nav{
+	width: 300px;
+	background: #2C3E50;
+	position: fixed;
+	height: 100%;
+	z-index: 99999;
+	transition: .5s;
+	overflow: hidden;
+	.menu{
+		
+		width: 300px;
+	}
+	
+	&.min{
+		width: 80px;
+	}
+
+	.bug-cont{
+		width: 100%;
+		position: relative;
+		.burger{
+		    position: absolute;
+		    right: -30px; 
+		    background: #34495E;
+		    color: white;
+		    height: 30px;
+		    width: 30px;
+		    border-radius: 50%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+	}
+	
+}
+
+
+main{
+	margin-left: 100px;
+}

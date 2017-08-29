@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<style type="text/css">
+	.menu{
+		height: 0px;
+		overflow: hidden;
+	}
+</style>
+<body>
+	<span class="ion-navicon-round" id="boton"></span>
+	<ul class="menu">
+		<li>Menu1</li>
+		<li>Menu2</li>
+		<li>Menu3</li>
+	</ul>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).on("ready", function(){
+			abierto=false;
+			$("#boton").on("click", function(){
+				if(!abierto){
+					$(".menu").css("height","auto");
+					abierto=true;
+				} else {	
+					$(".menu").css("height","0");
+					abierto=false;
+				}
+			});
+		})
+	</script>
+</body>
+</html>

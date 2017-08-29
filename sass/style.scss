@@ -1,0 +1,300 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+@import "vars";
+@import "theme";
+@import "nav";
+@import "main";
+@import "detalle-guias";
+@import "como";
+@import "liquidacion-profile";
+@import "liquidacion-alta_profile";
+@import "organigrama";
+@import "matriz-de-valuacion";
+@import "custom";
+@import "table";
+@import "estructura";
+ 
+
+.space{
+	margin: 20px 0;
+}
+html, body{
+	height: 100%;
+}
+body{
+	font-family: $main-font;
+	background: #EFF4FA;
+}
+
+p, li, input, label{
+	font-size: 13px;
+}
+
+.btn-primary{
+	background: $color1;
+	border: 1px solid darken($color1, 5%);
+	&:hover{
+		background: darken($color1, 5%);;
+		border: 1px solid darken($color1, 10%);
+	}
+}
+
+
+
+.app{
+	min-height: 100%;
+	.structure{
+		display: flex;
+		align-items: stretch;
+		min-height: 100%;
+		#left-nav{
+			width: 40px;
+			overflow: hidden;
+			padding: 0;
+			background: $bg-color;
+			padding-top: 10px;
+    		position: relative;
+    		transition: .5s;
+				
+			.burger{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background: #FAFAFA;
+				color: $bg-color;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				right: 5px;
+			}
+
+			ul{
+				padding: 0;
+				list-style: none;
+				margin-top: 30px;
+				li{
+					padding: 15px;
+					border-bottom: 1px solid #5F5F4F;
+					color: #F4F4F4;
+					min-width: 240px;
+					position: relative;
+					text-transform: uppercase;
+					span{
+						margin-right: 15px;
+					}
+
+					.submenu1{
+						height: 0;
+						overflow: hidden;
+						margin: 0;
+						padding: 0;
+						padding-top: 10px;
+						li{
+							padding: 7px 0 7px 32px;
+							border: none;
+							color: cyan;
+							text-transform: none;
+						}
+					}
+				}
+			}
+		}
+		main{
+			flex: 7;
+			header{
+				background: url("../imagenes/carrera.jpg");
+				background-size: cover;
+				background-position: center;
+				min-height: 150px;
+			}
+			h2{
+				text-transform: uppercase;
+				font-weight: 300;
+			}
+			.panel{
+				margin: 15px 0;
+				background: none;
+				.title{
+					padding: 15px; 
+					border-bottom: 2px solid #fafafa;
+					h3{
+						font-size: 16px;
+						color: $bg-color;
+						letter-spacing: -0.09px;
+						font-weight: 300;
+						text-transform: uppercase;
+						margin: 0;
+						display: inline-block;
+					}
+
+					.options{
+						float: right;
+						color: $text-color;
+						position: relative;
+						.menu{
+						    position: absolute;
+						    padding: 20px;
+						    z-index: 10;
+						    background: #4a4a4a;
+						    border: 1px solid #ddd;
+						    transform: translate(-50%);
+						    border-radius: 4px;
+						    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+						    top: 30px;
+						    min-width: 200px;
+						    &:after{
+						    	content: "";
+							    display: inline-block;
+							    width: 15px;
+							    height: 15px;
+							    background: #4a4a4a;
+							    position: absolute;
+							    top: -2px;
+							    left: 50%;
+							    transform: rotate(45deg) translatex(-50%);
+						    }
+						    ul{
+						    	padding: 0;
+						    	list-style: none;
+						    	li{
+						    		color: $bg-color;
+						    		padding: 5px 0;
+						    		color: white;
+						    	}
+						    }
+						}
+					}
+
+				}
+				.content{
+					padding: 15px;
+					h4,h5,h6{
+						text-transform: uppercase;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.lateral-menu{
+	background-color: $lateral-menu_bg;
+	min-width: 250px;
+	ul{
+		padding: 5px 0;
+		list-style: none;
+		li{
+			color: $lateral-menu_color;
+			padding: 8px 0;
+			border-bottom: 1px solid darken($lateral-menu_color, 40%);
+			&.selected{
+				color: #63BBD3;
+			}
+			strong{
+				font-weight: 300;
+				font-size: 14px;
+			}
+			ul{
+				padding-left: 15px;
+				&.close{
+					height: 0;
+					overflow: hidden;
+				}
+				
+				li{
+					text-transform: initial;
+					border: none;
+					font-size: 12px;
+
+				}
+			}
+		}
+	}
+}
+
+.dash-menu{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	li{
+		max-width: 200px;
+		padding: 40px;
+		article{
+			text-align: center;
+			img{
+				width: 120px;
+			}
+		}
+	}
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  top: 9px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+ 
+
+.lateral-menu{
+
+}

@@ -1,0 +1,189 @@
+nav{
+	padding: 10px 15px;
+	display: flex;
+	background: white;
+    justify-content: space-between;
+	.brand, .client-brand{
+		img{
+			height: 40px;
+		}
+	}
+
+	.brand{
+		position: relative;
+		.change{
+			position: absolute;
+			background: white;
+		    top: 50px;
+		    padding: 10px 20px;
+		    left: 30px;
+		    min-width: 180px;
+		    border: 1px solid #bbb;
+		    &:after{
+		    	content: "";
+			    width: 10px;
+			    height: 10px;
+			    background: white;
+			    position: absolute;
+			    top: -3px;
+			    z-index: 100;
+			    transform: rotate(45deg) translateX(-50%);
+			    display: inline-block;
+			    left: 50%;
+			    margin-left: 0px;
+			    border-top: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+		    }
+		    ul{
+		    	list-style: none;
+		    	padding: 0;
+		    	li{
+		    		padding: 8px 0;
+		    		img{
+		    			max-width: 30px;
+		    			margin-right: 10px;
+		    			height: auto;
+		    		}
+		    	}
+		    
+			}
+
+		}
+	}
+	.user-nav{
+		display: flex;
+		align-items: center;
+
+		.user{
+			display: flex;
+			align-items: center;
+			margin-right: 10px;
+			position: relative;
+			img{
+				max-width: 40px;
+				margin-right: 10px;
+			}
+
+			h4{
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+
+			.label{
+				font-weight: 300;
+				font-size: 10px;
+				margin: -4px 10px;
+				padding: 3px;
+			}
+		}
+
+		.notifications{
+			margin-right: 15px;
+			padding-right: 15px;
+			border-right: 1px solid #dcdcdc;
+			position: relative;
+		}
+		
+		.user-options, .notifications-panel{
+			position: absolute;
+		    background: white;
+		    top: 50px;
+		    padding: 10px 20px;
+		    left: 30px;
+		    border: 1px solid #bbb;
+		    &:after{
+		    	content: "";
+			    width: 10px;
+			    height: 10px;
+			    background: white;
+			    position: absolute;
+			    top: -3px;
+			    z-index: 100;
+			    transform: rotate(45deg) translateX(-50%);
+			    display: inline-block;
+			    left: 50%;
+			    margin-left: 0px;
+			    border-top: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+		    }
+		    ul{
+		    	list-style: none;
+		    	padding: 0;
+		    	li{
+		    		padding: 10px 0;
+		    		.fa{
+		    			color: #ccc;
+		    			margin-right: 10px;
+		    		}
+		    	}
+		    
+			}
+		}
+
+		.user-options{
+			.company{
+				overflow: hidden;
+				li{
+					margin: 2px 0;
+					padding: 5px 0;
+					img{
+						max-width: 30px;
+					}
+				}
+
+				&.close{
+					height: 0;
+				}
+			}
+		}
+
+		.notifications-panel{
+			transform: translateX(-50%);
+    		left: 4px;
+    		top: 40px;
+    		padding: 2px;
+    		width: 300px;
+    		z-index: 999;
+    		article{
+    			display: flex;
+    			z-index: 999;
+    			position: relative;
+    			padding: 5px;
+
+    			&.well{    
+				    border-radius: 0;
+				    border: none;
+				    box-shadow: none;
+				    background: #e7f9e4;
+				    margin-bottom: 2px;
+				}
+
+				&.admin{
+					background: rgba(51, 122, 183, 0.2);
+				}
+
+    			.icon{
+    				width: 35px;
+    			}
+
+    			.icon, .text{
+    				margin: 5px;
+    			}
+
+    			h5, h6{
+    				margin: 2px 0;
+    			}
+    			h6{
+    				text-transform: uppercase;
+    				font-size: 11px;
+    				font-weight: 300;
+    			}
+    		} 
+
+   			hr{
+				margin: 5px 0;
+			}
+		}
+	}
+
+}

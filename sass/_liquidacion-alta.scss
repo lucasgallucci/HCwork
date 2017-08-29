@@ -1,0 +1,42 @@
+.dato{
+	transition: 0.5s;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+	p, h5{
+		margin: 0;
+	}
+	h3{
+		border-top: 0;
+	    padding: 0;
+	    margin: 5px 0;
+	    font-weight: 600;
+	    color: #555;
+	} 
+
+	&:hover{
+		background: #efefef;
+		.actions{
+			opacity: 1;
+		}
+	}
+
+	.info{
+		flex: 10;
+	}
+
+	.actions{
+		flex: 1;
+		opacity: 0;
+		span{
+			&:first-child{
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+.add{
+	margin-top: 20px;
+}

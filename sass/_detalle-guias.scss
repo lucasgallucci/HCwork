@@ -1,0 +1,26 @@
+#detalle-guias{
+	header{
+		margin-bottom: 30px;
+	}
+	.well{
+		overflow: auto;
+	}	
+
+	.add-field{
+		color: $color1;
+		float: right;
+		margin-top: 10px;
+		span{
+			font-size: 18px;
+			position: relative;
+			top: 2px;
+		}	
+	}
+
+	section{
+		footer{
+			a{
+			}
+		}
+	}
+}
