@@ -8,10 +8,10 @@
 @import "como";
 @import "liquidacion-profile";
 @import "liquidacion-alta_profile";
-@import "organigrama";
 @import "matriz-de-valuacion";
 @import "custom";
 @import "table";
+@import "table-matriz";
 @import "estructura";
  
 
@@ -294,6 +294,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
  
+
 
 .lateral-menu{
 
