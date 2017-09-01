@@ -744,6 +744,9 @@ nav {
           font-weight: 900;
           margin: 0;
           margin-right: 10px; }
+      .table-matriz .table ul li .input-sm {
+        height: 22px;
+        line-height: 22px; }
     .table-matriz .table ul.color1 {
       background: #B4E3C8; }
     .table-matriz .table ul.color2 {
@@ -826,6 +829,31 @@ nav {
     padding: 5px; }
     .form-flex li input {
       margin-top: 13px; }
+
+.grados {
+  margin: 0;
+  padding: 0; }
+  .grados ul {
+    margin: 0;
+    padding: 10px; }
+    .grados ul:nth-child(1) {
+      background: #FDF9C6; }
+    .grados ul:nth-child(2) {
+      background: #FFEDBE; }
+    .grados ul:nth-child(3) {
+      background: #FED9A1; }
+    .grados ul:nth-child(4) {
+      background: #F9DBBD; }
+    .grados ul:nth-child(5) {
+      background: #F7D3D6; }
+    .grados ul:nth-child(6) {
+      background: #F9BFB8; }
+    .grados ul:nth-child(7) {
+      background: #E3DBEC; }
+    .grados ul:nth-child(8) {
+      background: #FDF9C6; }
+    .grados ul:nth-child(9) {
+      background: #FDF9C6; }
 
 nav#top-nav {
   z-index: 999; }

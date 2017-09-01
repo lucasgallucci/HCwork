@@ -30,7 +30,7 @@
 						margin-right: 3px;
 					}
 				}
-
+  
 				.flex{
 					display: flex;
 					align-items: center;
@@ -43,6 +43,11 @@
 						margin: 0;
 						margin-right: 10px; 
 					}
+				}
+
+				.input-sm{
+					height: 22px;
+    				line-height: 22px;
 				}
 			}
 
@@ -193,3 +198,44 @@
 	}
 }
 
+
+.grados{
+	margin: 0;
+	padding: 0;
+	ul{
+		margin: 0;
+		padding: 10px;
+		&:nth-child(1){
+			background: #FDF9C6;
+		}
+		&:nth-child(2){
+			background: #FFEDBE;
+		}
+
+		&:nth-child(3){
+			background: #FED9A1;
+		}
+
+		&:nth-child(4){
+			background: #F9DBBD;
+		}
+
+		&:nth-child(5){
+			background: #F7D3D6;
+		}
+
+		&:nth-child(6){
+			background: #F9BFB8;
+		}
+
+		&:nth-child(7){
+			background: #E3DBEC;
+		}
+		&:nth-child(8){
+			background: #FDF9C6;
+		}
+		&:nth-child(9){
+			background: #FDF9C6;
+		}
+	}
+}
