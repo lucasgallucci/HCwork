@@ -1,0 +1,485 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HCwork</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+    <nav>
+      <article class="client-brand">
+        <img src="imagenes/hucap.svg" class="img-responsive">
+      </article>
+
+      <article class="brand">
+        <img src="imagenes/hcwork.svg">
+        <a href="" class="btn btn-default btn-xs">cambiar empresa  ▼</a>
+      </article>
+      
+      
+      <article class="user-nav">
+
+        <div class="notifications">
+          <span class="fa fa-bell"></span>
+        </div>
+        <div class="user">
+          <img src="http://placehold.it/100x100" class="img-circle">
+          <h4>Enrique Martín Morales</h4> <span class="label label-primary">ADMIN</span>
+        </div>    
+      </article>
+    </nav>
+
+    <div class="app">
+      <div class="structure">
+        
+
+        <main id="dashboard" class="custom">
+          <header>
+
+          </header>
+          <section class="sub-header">
+            <article class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Cursos</a></li>
+                    <li><a href="#">Proveedores</a></li>
+                    <li><a href="#">Evaluaciones de medición</a></li>
+                    <li><a href="#">Evaluaciones de calificación</a></li>
+                    <li><a href="#">Protocolo de acción efectiva</a></li>
+                  </ul>
+
+                  <a href="" class="btn btn-info pull-right">+ crear edición</a>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+           </article>
+          </section>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="well">
+                  <h3>Nueva edición de altas</h3>
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Curso</label>
+                      <div class="col-sm-9">
+                        <select class="form-control input-lg">
+                          <option>Liderazgo orientado a resultados</option>
+                          <option>Coaching RESE</option>
+                          <option>Inteligencia emocional</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <hr>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Fechas</label>
+                        <div class="col-sm-9 margintop20">
+                          
+                          <div class="row">
+                            <div class="col-md-4"><p><strong>Fecha</strong></p></div>
+                            <div class="col-md-3"><p><strong>Hora de inicio</strong></p></div>
+                            <div class="col-md-3"><p><strong>Finaliza</strong></p></div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-4"><p>28/01/2018</p></div>
+                            <div class="col-md-3"><p>16:00</p></div>
+                            <div class="col-md-3"><p>18:30</p></div>
+                            <div class="col-xs-2"><a class="btn btn-link">eliminar</a></div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-4"><p>28/01/2018</p></div>
+                            <div class="col-md-3"><p>16:00</p></div>
+                            <div class="col-md-3"><p>18:30</p></div>
+                            <div class="col-xs-2"><a class="btn btn-link">eliminar</a></div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-4"><input class="form-control" type="date" placeholder="día"></div>
+                            <div class="col-md-3"><input class="form-control" type="time" placeholder="Hora de inicio"></div>
+                            <div class="col-md-3"><input class="form-control" type="time" placeholder="Hora de finalización"></div>
+                            <div class="col-md-2"><a class="btn btn-default">Agregar</a></div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Proveedor que lo facilita</label>
+                      <div class="col-sm-9">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="r_interno" value="option1"> Interno
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="r_externo" value="option2"> Externo
+                        </label>
+                      
+                        <div class="well margintop20" id="interno">
+                          <div class="form-group" id="facilitador" >
+                            <label for="razonsocial" class="col-sm-3 control-label">Seleccionar Facilitador</label>
+                            <div class="col-sm-9">
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Miguel Terlizzi
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Daniel López
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Laura Ramirez
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Daniel Perez Fernandez
+                                  </label>
+                                </div>
+
+                              <div class="form-group margintop20">
+                                <div class="col-md-9">
+                                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#btn-facilitador">Agregar facilitador</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+
+
+
+                        <div class="well margintop20" id="externo">
+                          <div class="form-group">
+                            <label for="razonsocial" class="col-sm-3 control-label">Seleccionar Proveedor</label>
+                            <div class="col-sm-9">
+                              <select class="form-control" id="proveedor">
+                                <option value="0">-- seleccionar --</option>
+                                <option value="1">Hucap</option>
+                                <option value="2">Adecco</option>
+                                <option value="3">Consultora Roemmers</option>
+                              </select>    
+                            </div>
+                          </div>
+
+                          <div class="form-group" id="facilitador" style="display: none;">
+                            <label for="razonsocial" class="col-sm-3 control-label">Seleccionar Facilitador</label>
+                            <div class="col-sm-9">
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Miguel Terlizzi
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Daniel López
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Laura Ramirez
+                                  </label>
+                                </div>
+                                <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Daniel Perez Fernandez
+                                  </label>
+                                </div>
+
+                              <div class="form-group margintop20">
+                                <div class="col-md-9">
+                                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#btn-facilitador">Agregar facilitador</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                            <hr>
+                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#btn-proveedor">Nuevo Proveedor</button>
+                          
+                        </div>
+
+
+
+                      </div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Tipo de inscripción</label>
+                      <div class="col-sm-9">
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Abierta
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Cerrada
+                        </label>
+                      </div>
+                    </div>
+                    
+
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Alcance y evaluaciones</label>
+                      <div class="col-sm-9">
+                        <label class="checkbox">
+                          <input type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Lleva calificación
+                        </label>
+                      </div>
+                    </div>
+                    
+                    <div class="">
+                      <hr> 
+                      <h4>Competencias a abordar</h4>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="checkbox col-xs-12">
+                        <label>
+                          <h5><input type="checkbox" value=""> ORIENTACIÓN A RESULTADOS</h5>      
+                        </label>
+                        <p><small>Implica pensar siempre en el resultado final y en función del mismo realizar tareas / acciones que permitirán alcanzarlo, siendo capaz de alterarlas si las mismas no contribuyen a lograr más y mejores resultados, aportando mayor rentabilidad y productividad a Hipódromo</small></p>     
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="checkbox col-xs-12">
+                        <label>
+                          <h5><input type="checkbox" value=""> ORIENTACIÓN A RESULTADOS</h5>      
+                        </label>
+                        <p><small>Implica pensar siempre en el resultado final y en función del mismo realizar tareas / acciones que permitirán alcanzarlo, siendo capaz de alterarlas si las mismas no contribuyen a lograr más y mejores resultados, aportando mayor rentabilidad y productividad a Hipódromo</small></p>     
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="checkbox col-xs-12">
+                        <label>
+                          <h5><input type="checkbox" value=""> ORIENTACIÓN A RESULTADOS</h5>      
+                        </label>
+                        <p><small>Implica pensar siempre en el resultado final y en función del mismo realizar tareas / acciones que permitirán alcanzarlo, siendo capaz de alterarlas si las mismas no contribuyen a lograr más y mejores resultados, aportando mayor rentabilidad y productividad a Hipódromo</small></p>     
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="checkbox col-xs-12">
+                        <label>
+                          <h5><input type="checkbox" value=""> ORIENTACIÓN A RESULTADOS</h5>      
+                        </label>
+                        <p><small>Implica pensar siempre en el resultado final y en función del mismo realizar tareas / acciones que permitirán alcanzarlo, siendo capaz de alterarlas si las mismas no contribuyen a lograr más y mejores resultados, aportando mayor rentabilidad y productividad a Hipódromo</small></p>     
+                      </div>
+                    </div>
+
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#btn-competencia">Nueva competencia</button>
+                    
+                    <hr>
+
+                    <div class="form-group">
+                      <div class="col-sm-9">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+        </main>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="btn-proveedor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Alta de Proveedor</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 control-label">Razón solcial</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Cuit</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Teléfono</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Dirección</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Guardar proveedor</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="btn-facilitador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Alta de Facilitador</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 control-label">Razón solcial</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" disabled id="inputEmail3" value="Hucap" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Nombre</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">DNI</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Curriculum Vitae</label>
+                <div class="col-sm-9">
+                  <input type="file" class="form-control" id="inputPassword3" placeholder="">
+                  <hr>
+                  <textarea class="form-control"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Guardar facilitador</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="modal fade" id="btn-competencia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Alta de competencia</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 control-label">Título</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control"  id="inputEmail3" placeholder="">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Descripción</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Agregar competencia</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).on("ready",function(){
+
+      $("#interno").css("display","none");
+      $("#externo").css("display","none");
+      
+      $("#r_interno").on("click", function(){
+          $("#interno").css("display","block");
+          $("#externo").css("display","none");
+      })
+
+      $("#r_externo").on("click", function(){
+          $("#interno").css("display","none");
+          $("#externo").css("display","block");
+      })
+      
+      $("#proveedor").on("change", function(){
+        if($("#proveedor").val()!=0){
+          $("#facilitador").css("display","block");
+        }else{
+          $("#facilitador").css("display","none");
+        }  
+      })
+    })
+    </script>
+  </body>
+  </html>
