@@ -1,0 +1,30 @@
+#capacitacion{
+	.invitados-tab{
+		padding:0;
+		li{
+			border-bottom: 1px solid #ccc;
+		    font-size: 12px;
+		    display: flex;
+		    padding: 4px 0px;
+		    list-style: none;
+		    justify-content: space-between;
+		    align-items: center;
+		    span{
+		    	flex: 3;
+		    	&:last-child{
+		    		flex: 1;
+		    	}
+		    }
+		}
+	}
+
+	.filtrar-invitados{
+		margin: 0;
+	}
+
+	.costos{
+		p{
+			margin: 0 0 2px 0;
+		}
+	}
+}

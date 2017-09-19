@@ -21,7 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
   </head>
-  <body>
+  <body id="capacitacion">
     <nav>
       <article class="client-brand">
         <img src="imagenes/hucap.svg" class="img-responsive">
@@ -105,10 +105,10 @@
 
                     <div class="form-group">
                       <label class="col-sm-3 control-label">Fechas</label>
-                        <div class="col-sm-9 margintop20">
+                        <div class="col-sm-9 margintop10">
                           
                           <div class="row">
-                            <div class="col-md-4"><p><strong>Fecha</strong></p></div>
+                            <div class="col-md-4"><p><strong>Día</strong></p></div>
                             <div class="col-md-3"><p><strong>Hora de inicio</strong></p></div>
                             <div class="col-md-3"><p><strong>Finaliza</strong></p></div>
                           </div>
@@ -127,14 +127,35 @@
                             <div class="col-xs-2"><a class="btn btn-link">eliminar</a></div>
                           </div>
 
+                          <div>
+                            <hr>
+                          </div>
+
                           <div class="row">
                             <div class="col-md-4"><input class="form-control" type="date" placeholder="día"></div>
                             <div class="col-md-3"><input class="form-control" type="time" placeholder="Hora de inicio"></div>
                             <div class="col-md-3"><input class="form-control" type="time" placeholder="Hora de finalización"></div>
-                            <div class="col-md-2"><a class="btn btn-default">Agregar</a></div>
+                            <div class="col-md-2"><a class="btn btn-default">+</a></div>
                           </div>
                         </div>
                     </div>
+
+                    <div>
+                      <hr>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Lugar</label>
+                      <div class="col-sm-9">
+                        <input class="form-control">
+
+                      </div>
+                    </div>
+
+                    <div>
+                      <hr>
+                    </div>
+
 
                     <div class="form-group">
                       <label class="col-sm-3 control-label">Proveedor que lo facilita</label>
@@ -147,7 +168,7 @@
                         </label>
                       
                         <div class="well margintop20" id="interno">
-                          <div class="form-group" id="facilitador" >
+                          <div class="form-group" id="facilitador-int" >
                             <label for="razonsocial" class="col-sm-3 control-label">Seleccionar Facilitador</label>
                             <div class="col-sm-9">
                                 <div class="checkbox">
@@ -248,76 +269,192 @@
                       </div>
                     </div>
 
+                    <div>
+                      <hr>
+                    </div>
 
                     <div class="form-group">
                       <label class="col-sm-3 control-label">Tipo de inscripción</label>
                       <div class="col-sm-9">
                         <label class="radio-inline">
-                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Abierta
+                          <input type="radio" name="inlineRadioOptions" id="inscripcion1" value="option1"> Abierta
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Cerrada
+                          <input type="radio" name="inlineRadioOptions" id="inscripcion2" value="option2"> Cerrada
                         </label>
+
+                        <div class="row" id="inscripcion-abierta">
+                          <div class="col-xs-12 margintop20">
+                            <div class="well">
+                                <h5>Inscripción Abrierta</h5>
+                                <div class="form-group">
+                                  <label for="razonsocial" class="col-sm-3 control-label">Cupo</label>
+                                    <div class="col-sm-9">
+                                      <input class="form-control" type="number">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>                            
+                        </div>
+
+                        <div class="row" id="inscripcion-cerrada">
+                          <div class="col-xs-12 margintop20">
+                            <div class="well">
+                                <h5>Inscripción Cerrada: Invitar asistentes.</h5>
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <div>
+                                      <!-- Nav tabs -->
+                                      <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#nombre" aria-controls="nombre" role="tab" data-toggle="tab">Por nombre</a></li>
+                                        <li role="presentation"><a href="#area" aria-controls="area" role="tab" data-toggle="tab">Por área</a></li>
+                                        <li role="presentation"><a href="#sector" aria-controls="sector" role="tab" data-toggle="tab">Por sector</a></li>
+                                
+                                      </ul>
+
+                                      <!-- Tab panes -->
+                                      <div class="tab-content margintop10">
+                                        <div role="tabpanel" class="tab-pane active" id="nombre">
+                                          <div class="well">
+                                            <div class="form-group filtrar-invitados">
+                                              <label class="col-sm-3 control-label">Filtrar</label>
+                                              <div class="col-sm-9">
+                                                <input class="form-control">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          
+                                          <ul class="invitados-tab">
+                                            <li><span>Daniel Bravo </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-primary btn-xs pull-right">invitado</a><span></li>
+                                            <li><span>Joaquín Mendietta s</span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-primary btn-xs pull-right">invitado</a><span></li>
+                                            <li><span>Ramiro Lusicch </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-primary btn-xs pull-right">invitado</a><span></li>
+                                            <li><span>Juana Montanari</span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-primary btn-xs pull-right">invitado</a><span></li>
+                                            <li><span>Daniel Meteoro </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-default btn-xs pull-right">invitar</a><span></li>
+                                            <li><span>Carla Daniela Lopez García </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-default btn-xs pull-right">invitar</a><span></li>
+                                            <li><span>Daniel Bravo </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-default btn-xs pull-right">invitar</a><span></li>
+                                            <li><span>Daniel Bravo </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-default btn-xs pull-right">invitar</a><span></li>
+                                            <li><span>Daniel Bravo </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-default btn-xs pull-right">invitar</a><span></li>
+                                            <li><span>Daniel Bravo </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-default btn-xs pull-right">invitar</a><span></li>
+                                            <li><span>Daniel Bravo </span><span>Diseñador Gráfico</span> <span><a href="" class="btn btn-default btn-xs pull-right">invitar</a><span></li>
+                                          </ul>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="area">
+                                            <ul class="invitados-tab">
+                                              <li>Finanzas <a href="" class="btn btn-primary btn-xs pull-right">invitado</a></li>
+                                              <li>Marketing <a href="" class="btn btn-primary btn-xs pull-right">invitado</a></li>
+                                              <li>Diseño <a href="" class="btn btn-primary btn-xs pull-right">invitado</a></li>
+                                              <li>Recursos Humanos<a href="" class="btn btn-primary btn-xs pull-right">invitado</a></li>
+                                              <li>Desarrollo <a href="" class="btn btn-default btn-xs pull-right">invitar</a></li>
+                                              <li>Personal <a href="" class="btn btn-default btn-xs pull-right">invitar</a></li>
+                                              <li>Ventas <a href="" class="btn btn-default btn-xs pull-right">invitar</a></li>
+                                              <li>Comex <a href="" class="btn btn-default btn-xs pull-right">invitar</a></li>
+                                          </ul>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="sector">
+                                          <ul class="invitados-tab">
+                                              <li>Finanzas <a href="" class="btn btn-primary btn-xs pull-right">invitado</a></li>
+                                              <li>Marketing <a href="" class="btn btn-primary btn-xs pull-right">invitado</a></li>
+                                              <li>Diseño <a href="" class="btn btn-primary btn-xs pull-right">invitado</a></li>
+                                              <li>Recursos Humanos<a href="" class="btn btn-primary btn-xs pull-right">invitado</a></li>
+                                              <li>Desarrollo <a href="" class="btn btn-default btn-xs pull-right">invitar</a></li>
+                                              <li>Personal <a href="" class="btn btn-default btn-xs pull-right">invitar</a></li>
+                                              <li>Ventas <a href="" class="btn btn-default btn-xs pull-right">invitar</a></li>
+                                              <li>Comex <a href="" class="btn btn-default btn-xs pull-right">invitar</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                       </div>
-                    </div>
                     
 
-                    <div class="form-group">
-                      <label class="col-sm-3 control-label">Alcance y evaluaciones</label>
-                      <div class="col-sm-9">
-                        <label class="checkbox">
-                          <input type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Lleva calificación
-                        </label>
-                      </div>
-                    </div>
-                    
-                    <div class="">
-                      <hr> 
-                      <h4>Competencias a abordar</h4>
                     </div>
 
-                    <div class="form-group">
-                      <div class="checkbox col-xs-12">
-                        <label>
-                          <h5><input type="checkbox" value=""> ORIENTACIÓN A RESULTADOS</h5>      
-                        </label>
-                        <p><small>Implica pensar siempre en el resultado final y en función del mismo realizar tareas / acciones que permitirán alcanzarlo, siendo capaz de alterarlas si las mismas no contribuyen a lograr más y mejores resultados, aportando mayor rentabilidad y productividad a Hipódromo</small></p>     
-                      </div>
+
+                    <div>
+                      <hr>
                     </div>
 
-                    <div class="form-group">
-                      <div class="checkbox col-xs-12">
-                        <label>
-                          <h5><input type="checkbox" value=""> ORIENTACIÓN A RESULTADOS</h5>      
-                        </label>
-                        <p><small>Implica pensar siempre en el resultado final y en función del mismo realizar tareas / acciones que permitirán alcanzarlo, siendo capaz de alterarlas si las mismas no contribuyen a lograr más y mejores resultados, aportando mayor rentabilidad y productividad a Hipódromo</small></p>     
-                      </div>
-                    </div>
 
-                    <div class="form-group">
-                      <div class="checkbox col-xs-12">
-                        <label>
-                          <h5><input type="checkbox" value=""> ORIENTACIÓN A RESULTADOS</h5>      
-                        </label>
-                        <p><small>Implica pensar siempre en el resultado final y en función del mismo realizar tareas / acciones que permitirán alcanzarlo, siendo capaz de alterarlas si las mismas no contribuyen a lograr más y mejores resultados, aportando mayor rentabilidad y productividad a Hipódromo</small></p>     
+                    <div class="form-group costos">
+                      <label class="col-sm-3 control-label">Costos</label>
+                      <div class="col-md-9">
+
+                         <div class="row">
+                            <div class="col-md-12 margintop10">
+                              <p><strong>Item:</strong> Honorarios</p>
+                              <p><strong>Responsable:</strong> Damián Gagliano</p>
+                              <p><strong>Costo: </strong>$34.567.-</p>
+                              <p><strong>Factura asociada:</strong> 2739876874369873 · <span class="fa fa-paperclip"></span></p>
+                            </div>
+                          </div>
+
+                        <hr>
+
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#btn-costo">Agregar costo</button>
+
+                      
+                          
                       </div>
                     </div>
 
-                    <div class="form-group">
-                      <div class="checkbox col-xs-12">
-                        <label>
-                          <h5><input type="checkbox" value=""> ORIENTACIÓN A RESULTADOS</h5>      
-                        </label>
-                        <p><small>Implica pensar siempre en el resultado final y en función del mismo realizar tareas / acciones que permitirán alcanzarlo, siendo capaz de alterarlas si las mismas no contribuyen a lograr más y mejores resultados, aportando mayor rentabilidad y productividad a Hipódromo</small></p>     
+
+                    <div>
+                      <hr>
+                    </div>
+
+                    <div class="form-group costos">
+                      <label class="col-sm-3 control-label">Recursos</label>
+                      <div class="col-md-9">
+
+                         <div class="row">
+                            <div class="col-md-12 margintop10">
+                              <p><strong>Recurso:</strong> Honorarios</p>
+                              <p><strong>Responsable:</strong> Damián Gagliano</p>
+                              <p><strong>Costo: </strong>$34.567.-</p>
+                              <p><strong>Factura asociada:</strong> 2739876874369873 · <span class="fa fa-paperclip"></span></p>
+                            </div>
+                          </div>
+
+                        <hr>
+
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#btn-costo">Agregar recurso</button>
+
+                      
+                          
                       </div>
                     </div>
 
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#btn-competencia">Nueva competencia</button>
+
+                    <div>
+                      <hr>
+                    </div>
+
+
+                    <div class="form-group costos">
+                      <label class="col-sm-3 control-label">Recursos</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control">
+                        <div class="margintop10">
+                          <span class="btn btn-default">Rotafolios <span class="fa fa-times"></span></span>
+                          <span class="btn btn-default">Lapiceras <span class="fa fa-times"></span></span>
+                          <span class="btn btn-default">Aulas en U <span class="fa fa-times"></span></span>
+                          <span class="btn btn-default">Aula Tradicional <span class="fa fa-times"></span></span>
+                        </div>
+                      </div>
+                    </div>
+
+
                     
                     <hr>
 
                     <div class="form-group">
-                      <div class="col-sm-9">
+                      <div class="col-sm-12 text-right">
                         <button type="submit" class="btn btn-primary">Guardar</button>
                       </div>
                     </div>
@@ -372,6 +509,64 @@
         </div>
       </div>
     </div>
+
+
+
+    <div class="modal fade" id="btn-costo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Agregar costo</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 control-label">Descripción</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option>Honorarios</option>
+                    <option>Impresión de materiales</option>
+                    <option>Carpetas</option>
+                    <option>Materiales dinámica</option>
+                    <option>Alquiler de salón</option>
+                    <option>Refrigerios</option>
+                    <option>Traslado</option>
+                    <option>Otro costo</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Costo</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Proveedor</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Factura asociada</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+                <div class="col-sm-4">
+                  <input type="file" class="form-control" id="inputPassword3" placeholder="">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Guardar proveedor</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <div class="modal fade" id="btn-facilitador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
@@ -461,6 +656,8 @@
 
       $("#interno").css("display","none");
       $("#externo").css("display","none");
+      $("#inscripcion-cerrada").css("display","none");
+      $("#inscripcion-abierta").css("display","none");
       
       $("#r_interno").on("click", function(){
           $("#interno").css("display","block");
@@ -471,6 +668,17 @@
           $("#interno").css("display","none");
           $("#externo").css("display","block");
       })
+
+      $("#inscripcion1").on("click", function(){
+          $("#inscripcion-abierta").css("display","block");
+          $("#inscripcion-cerrada").css("display","none");
+      })
+
+      $("#inscripcion2").on("click", function(){
+          $("#inscripcion-abierta").css("display","none");
+          $("#inscripcion-cerrada").css("display","block");
+      })
+
       
       $("#proveedor").on("change", function(){
         if($("#proveedor").val()!=0){

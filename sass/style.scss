@@ -13,6 +13,7 @@
 @import "table";
 @import "table-matriz";
 @import "estructura";
+@import "capacitacion";
  
 
 .space{
@@ -306,5 +307,5 @@ input:checked + .slider:before {
 
 
 .margintop10{
-	margin-top: 20px;
+	margin-top: 10px;
 }

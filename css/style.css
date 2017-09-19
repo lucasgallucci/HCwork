@@ -890,6 +890,25 @@ nav#left-nav {
 main {
   margin-left: 100px; }
 
+#capacitacion .invitados-tab {
+  padding: 0; }
+  #capacitacion .invitados-tab li {
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    display: flex;
+    padding: 4px 0px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center; }
+    #capacitacion .invitados-tab li span {
+      flex: 3; }
+      #capacitacion .invitados-tab li span:last-child {
+        flex: 1; }
+#capacitacion .filtrar-invitados {
+  margin: 0; }
+#capacitacion .costos p {
+  margin: 0 0 2px 0; }
+
 .space {
   margin: 20px 0; }
 
@@ -1117,6 +1136,6 @@ input:checked + .slider:before {
   margin-top: 20px; }
 
 .margintop10 {
-  margin-top: 20px; }
+  margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
