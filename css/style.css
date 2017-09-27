@@ -909,6 +909,53 @@ main {
 #capacitacion .costos p {
   margin: 0 0 2px 0; }
 
+#login {
+  background: url("../imagenes/back-login.jpg");
+  background-size: cover;
+  background-position: center; }
+  #login .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
+    #login .flex .login {
+      width: 300px;
+      position: relative;
+      padding-top: 70px;
+      border-radius: 3px;
+      border: none; }
+      #login .flex .login .img-user {
+        position: absolute;
+        left: 50%;
+        max-width: 100px;
+        margin: auto;
+        transform: translateX(-50%);
+        top: -50px; }
+        #login .flex .login .img-user img {
+          padding: 3px;
+          border: 1px solid #ddd;
+          box-shadow: 0 0 3px #ccc;
+          background: white; }
+      #login .flex .login input {
+        font-weight: 300; }
+        #login .flex .login input[type="submit"] {
+          position: absolute;
+          left: 0px;
+          border-radius: 0 0 3px 3px;
+          padding: 10px 0 30px 0;
+          margin-top: 10px;
+          transition: 1s; }
+      #login .flex .login .input-group-addon {
+        min-width: 40px;
+        background: white; }
+  #login small {
+    display: block;
+    text-align: right;
+    color: #aaa; }
+  #login .error {
+    margin: 5px 0;
+    font-size: 12px; }
+
 .space {
   margin: 20px 0; }
 
