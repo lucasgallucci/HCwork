@@ -16,12 +16,15 @@
 			}
 
 			li{
-				flex: 2;
+				flex: 3;
 				padding: 3px;
 				text-align: center;
 				&.large{
 					flex: 5;
 					text-align: left;
+				}
+				&.mini{
+					flex: 1;
 				}
 				p{
 					margin: 0;
@@ -31,7 +34,14 @@
 						margin-right: 3px;
 					}
 				}
-			}			
+			}
+
+			&.pretitle{
+				border-top: 5px solid #dcdcdc;
+				text-align: left;
+				color: white;
+				background: $color1;
+			}
 		
 			&.title{
 				background: $color2;
@@ -99,9 +109,10 @@
 						    padding: 5px 10px;
 						    z-index: 10;
 						    transform: translate(-50%);
+						    left: 5px;
 						    border-radius: 4px;
 						    top: 30px;
-						    min-width: 100px;
+						    min-width: 150px;
 						    background: white;
 						    border: 1px solid #dedede;
 						    &:after{
@@ -126,6 +137,7 @@
 						    		padding: 5px 0;
 						    		background: white;
 						    		display: block;
+						    		text-align: left;
 						       	}
 						    }
 						}

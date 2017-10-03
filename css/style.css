@@ -631,18 +631,25 @@ nav {
     .table-list .table ul:first-child {
       align-items: center; }
     .table-list .table ul li {
-      flex: 2;
+      flex: 3;
       padding: 3px;
       text-align: center; }
       .table-list .table ul li.large {
         flex: 5;
         text-align: left; }
+      .table-list .table ul li.mini {
+        flex: 1; }
       .table-list .table ul li p {
         margin: 0; }
         .table-list .table ul li p small {
           font-size: 10px;
           color: #aaa;
           margin-right: 3px; }
+    .table-list .table ul.pretitle {
+      border-top: 5px solid #dcdcdc;
+      text-align: left;
+      color: white;
+      background: #288AAD; }
     .table-list .table ul.title {
       background: #DB4949;
       padding-left: 10px; }
@@ -675,9 +682,10 @@ nav {
       padding: 5px 10px;
       z-index: 10;
       transform: translate(-50%);
+      left: 5px;
       border-radius: 4px;
       top: 30px;
-      min-width: 100px;
+      min-width: 150px;
       background: white;
       border: 1px solid #dedede; }
       .table-list .table.with-options ul li .options .menu:after {
@@ -700,7 +708,8 @@ nav {
         .table-list .table.with-options ul li .options .menu ul li {
           padding: 5px 0;
           background: white;
-          display: block; }
+          display: block;
+          text-align: left; }
   .table-list .table.select ul:not(.title):hover {
     background: #e1f5fe;
     cursor: pointer; }
