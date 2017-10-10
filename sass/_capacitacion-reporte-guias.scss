@@ -1,0 +1,17 @@
+#capacitacion-reporte-guias{
+	.asignar-guias{
+		padding-left: 15px;
+		display: block;
+		border: none;
+		li{
+			font-weight: normal;
+			img{
+				max-width: 15px;
+				margin-right: 5px;
+			}
+		}
+		&:hover{
+			background: none !important;
+		}
+	}
+}

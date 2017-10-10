@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HCwork</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body id="capacitacion-reporte-guias">
+    <nav>
+      <article class="client-brand">
+        <img src="imagenes/hucap.svg" class="img-responsive">
+      </article>
+
+      <article class="brand">
+        <img src="imagenes/hcwork.svg">
+        <a href="" class="btn btn-default btn-xs">cambiar empresa  ▼</a>
+      </article>
+      
+      
+      <article class="user-nav">
+
+        <div class="notifications">
+          <span class="fa fa-bell"></span>
+        </div>
+        <div class="user">
+          <img src="http://placehold.it/100x100" class="img-circle">
+          <h4>Enrique Martín Morales</h4> <span class="label label-primary">ADMIN</span>
+        </div>    
+      </article>
+    </nav>
+
+    <div class="app">
+      <div class="structure">
+        
+
+        <main id="dashboard" class="custom">
+          <header>
+
+          </header>
+          <section class="sub-header">
+            <article class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="capacitacion-curso-listar.html">Cursos</a></li>
+                    <li><a href="capacitacion-proveedores-listar.html">Proveedores</a></li>
+                    <li><a href="capacitacion-guias-listar.html">Guías</a></li>
+                    <li><a href="capacitacion-medicion-listar.html">Evaluaciones de medición</a></li>
+                    <li><a href="capacitacion-calificacion-listar.html">Evaluaciones de calificación</a></li>
+                    <li><a href="capacitacion-protocolo-listar.html">Protocolo de acción efectiva</a></li>
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="capacitacion-eventos-listar.html" class="btn btn-info btn-xs">Eventos</a></li>
+                  </ul>
+
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+           </article>
+          </section>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+
+                <div class="table-list">
+                  <div class="table select left">
+                     <ul class="title">
+                      <li><p>Reporte general de guias</p></li>
+                    </ul>
+
+                    <ul>
+                      <li class="large">Total de Guías</li>
+                      <li>77</li>
+                    </ul>
+                    <ul>
+                      <li class="large">Guías por usuario</li>
+                      <li>1.5</li>
+                    </ul>
+
+                    <ul>
+                      <li class="large">Guías no realizadas</li>
+                      <li>419 (48%)</li>
+                    </ul>
+
+                    <ul>
+                      <li class="large">Guías en proceso</li>
+                      <li>40 (10%)</li>
+                    </ul>
+
+                    <ul>
+                      <li class="large">Guías finalizadas</li>
+                      <li>440 (90%)</li>
+                    </ul>
+
+                    <ul>
+                      <li class="large">Usuarios que no han tocado guias</li>
+                      <li>10</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                gráfico
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="well">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">Buscar usuario</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nombre Apellido">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h5><strong>Estado de Guias <small>Según mentor</small></strong></h5>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Pending
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Observada
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Aprobada
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Rehacer
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h5><strong>Estado de Guias <small>Según usuario</small></strong></h5>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            No realizada
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            En proceso
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Finalizada
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h5><strong>Estado de actividad <small>de usuario</small></strong></h5>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Guías no realizada
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Guías en proceso
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Guías Finalizadas
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="table-list">
+                  <div class="table select left vcenter">
+                     <ul class="title">
+                      <li class="xmini"><p></p></li>
+                      <li><p>Usuario</p></li>
+                      <li class="xmini"><p>Guías</p></li>
+                      <li class="large"><p>Funciones</p></li>
+                    </ul>
+
+                    <ul>
+                      <li class="xmini"><p><img src="http://placehold.it/400x400" class="img-responsive img-rounded"></p></li>
+                      <li><p>Daniel Lopez Gomez</p></li>
+                      <li class="xmini"><p><span class="fa fa-circle green"></span> 9/9</p></li>
+                      <li class="large"><p>
+                        <a class="btn btn-xs btn-default">ver/editar info</a>
+                        <a class="btn btn-xs btn-default">asignar guias</a>
+                        <a class="btn btn-xs btn-default">competencias</a>
+                        <a class="btn btn-xs btn-default">desempeño</a>
+                        <a class="btn btn-xs btn-default">ver cartelera</a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-plus"></span></a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-trash"></span></a>
+                      </p></li>
+                    </ul>
+
+                    <ul>
+                      <li class="xmini"><p><img src="http://placehold.it/400x400" class="img-responsive img-rounded"></p></li>
+                      <li><p>Daniel Lopez Gomez</p></li>
+                      <li class="xmini"><p><span class="fa fa-circle green"></span> 9/9</p></li>
+                      <li class="large"><p>
+                        <a class="btn btn-xs btn-default">ver/editar info</a>
+                        <a class="btn btn-xs btn-default">asignar guias</a>
+                        <a class="btn btn-xs btn-default">competencias</a>
+                        <a class="btn btn-xs btn-default">desempeño</a>
+                        <a class="btn btn-xs btn-default">ver cartelera</a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-plus"></span></a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-trash"></span></a>
+                      </p></li>
+                    </ul>
+
+                    <ul>
+                      <li class="xmini"><p><img src="http://placehold.it/400x400" class="img-responsive img-rounded"></p></li>
+                      <li><p>Daniel Lopez Gomez</p></li>
+                      <li class="xmini"><p><span class="fa fa-circle green"></span> 9/9</p></li>
+                      <li class="large"><p>
+                        <a class="btn btn-xs btn-default">ver/editar info</a>
+                        <a class="btn btn-xs btn-default">asignar guias</a>
+                        <a class="btn btn-xs btn-default">competencias</a>
+                        <a class="btn btn-xs btn-default">desempeño</a>
+                        <a class="btn btn-xs btn-default">ver cartelera</a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-plus"></span></a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-trash"></span></a>
+                      </p></li>
+                    </ul>
+
+                    <!-- si clickeas en "asignar guía se abre el modal de ejemplo, deberían tenerlo todas las personas" -->
+                    <ul>
+                      <li class="xmini"><p><img src="http://placehold.it/400x400" class="img-responsive img-rounded"></p></li>
+                      <li><p>Daniel Lopez Gomez</p></li>
+                      <li class="xmini"><p><span class="fa fa-circle green"></span> 9/9</p></li>
+                      <li class="large"><p>
+                        <a class="btn btn-xs btn-default">ver/editar info</a>
+                        <a class="btn btn-xs btn-default" type="button" data-toggle="modal" data-target="#asignar-guias">asignar guias</a>
+                        <a class="btn btn-xs btn-default">competencias</a>
+                        <a class="btn btn-xs btn-default">desempeño</a>
+                        <a class="btn btn-xs btn-default">ver cartelera</a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-plus"></span></a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-trash"></span></a>
+                      </p></li>
+                    </ul>
+
+                    <ul>
+                      <li class="xmini"><p><img src="http://placehold.it/400x400" class="img-responsive img-rounded"></p></li>
+                      <li><p>Daniel Lopez Gomez</p></li>
+                      <li class="xmini"><p><span class="fa fa-circle green"></span> 9/9</p></li>
+                      <li class="large"><p>
+                        <a class="btn btn-xs btn-default">ver/editar info</a>
+                        <a class="btn btn-xs btn-default">asignar guias</a>
+                        <a class="btn btn-xs btn-default">competencias</a>
+                        <a class="btn btn-xs btn-default">desempeño</a>
+                        <a class="btn btn-xs btn-default">ver cartelera</a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-plus"></span></a>
+                        <a class="btn btn-xs btn-default"><span class="fa fa-trash"></span></a>
+                      </p></li>
+                    </ul>
+                    
+                    <!-- se despliega cuando se clickea el botón + -->
+                    <ul class="asignar-guias">
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span>  Guía Matriz SQP. (45 min) 20/07/2015 (Aprobada 23/07/2015)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span> El conflicto: Superando dificultades y resistencias.. (45 min) 02/10/2015 (Aprobada 15/07/2016)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span> Guía Responsabilidad Incondicional. (45 min) 03/09/2014 (Aprobada 16/09/2014)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span> Caso de Negociación Gafka SA-GARBARILLO. (50 min) 02/10/2015 (Aprobada 15/07/2016)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span>  Ideas Extraordinarias. (180 min) 09/10/2014 (Aprobada 15/07/2016)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle red"></span> Logrando RESE en tu Sucursal. (60 min)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span> Guía Enseñar a Enseñar. (20 min) 18/12/2014 (Aprobada 16/01/2015)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span> Gestión de RR.HH. (20 min) 20/03/2016 (Aprobada 28/03/2016)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle red"></span> Guía EMC (Estar Más Cerca)-Feedback. (20 min)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span> Quinta Disciplina Capítulo VII. (30 min) 28/08/2014 (Aprobada 03/09/2014)</li>
+                      <li> <img src="https://image.flaticon.com/icons/svg/179/179483.svg"> <span class="fa fa-circle green"></span> Liderazgo Basado en Resultados. (30 min) 19/04/2015 (Aprobada 21/04/2015)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>                
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" id="asignar-guias" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Daniel Lopez Gomez</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+<tbody><tr><td style="border-top:2px solid #4AB2D7;"><b>Programa</b></td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=5&amp;verusuario=403">Nuestro Rol</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="5">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=6&amp;verusuario=403">Objetivo General</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="6">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=7&amp;verusuario=403">Objetivo(s) Particular (es)</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="7">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=10&amp;verusuario=403">Metodología</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="10">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=9&amp;verusuario=403">Esquema Integral</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="9">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=8&amp;verusuario=403">Alcance del Programa</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="8">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=84&amp;verusuario=403">Resumé Mentor</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="84">
+</td></tr><tr><td style="border-top:2px solid #4AB2D7;"><b>Guías de Acción</b></td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=185&amp;verusuario=403">Definición de Objetivos</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="185">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=83&amp;verusuario=403">Guía Relevamiento</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="83">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=153&amp;verusuario=403">Guía Relevamiento Carsa</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="153">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=3&amp;verusuario=403">Guía Conociéndonos</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="3">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=4&amp;verusuario=403">Guía Compromiso</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="4">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=11&amp;verusuario=403">Guía Diag. Preeliminar y Desc de Puesto</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="11">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=12&amp;verusuario=403">Test  estilo de Liderazgo</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="12">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=105&amp;verusuario=403">Test de Estilo de Negociación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="105">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=13&amp;verusuario=403">Guía Estilos de Liderazgo Apropiado</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="13">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=181&amp;verusuario=403">Guía Estilos de Liderazgo Apropiado V2</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="181">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=14&amp;verusuario=403">Guía Autodiagnóstico/ Feedback 360º</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="14">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=175&amp;verusuario=403">Guía Feedback 360 V2</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="175">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=187&amp;verusuario=403">Guía Feedback 360 Hipódromo.</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="187">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=156&amp;verusuario=403">Guía Autodiagnóstico/Feedback 180º</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="156">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=154&amp;verusuario=403">Guía Autodiagnóstico/Feedback 360-EJEMPLO</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="154">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=106&amp;verusuario=403">Guía Autodiagnóstico-Feedback 360-Negociación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="106">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=111&amp;verusuario=403">Guía Feedback -Counselor-</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="111">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=16&amp;verusuario=403">Guía Acordando Objetivos</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="16">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=15&amp;verusuario=403">Guía Motivación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="15">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=177&amp;verusuario=403">Guía Motivación V2</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="177">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=34&amp;verusuario=403">Guía Matriz SQP</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="34" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=170&amp;verusuario=403">Guía Matriz SQP HAPSA</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="170">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=163&amp;verusuario=403">Matriz SQP2</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="163">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=171&amp;verusuario=403">Evaluación de Desempeño HAPSA</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="171">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=39&amp;verusuario=403">Guía Superando dificultades y resistencias</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="39">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=165&amp;verusuario=403">El conflicto: Superando dificultades y resistencias.</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="165" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=180&amp;verusuario=403">Guía Superando Dificultades y Resistencias V2</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="180">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=107&amp;verusuario=403">Superando Dificultades y Resistencias - Negociación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="107">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=109&amp;verusuario=403">Análisis de un Conflicto</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="109">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=40&amp;verusuario=403">Guía En búsqueda de la felicidad</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="40">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=152&amp;verusuario=403">Guía En búsqueda de la felicidad (grupal)</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="152">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=56&amp;verusuario=403">Guía Apollo XIII</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="56">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=58&amp;verusuario=403">Guía Conversaciones con Dios</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="58">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=57&amp;verusuario=403">Guía John Q</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="57">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=108&amp;verusuario=403">John Q Negociación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="108">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=59&amp;verusuario=403">Guía Una Verdad Incómoda</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="59">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=41&amp;verusuario=403">Guía Leyes Sistémicas</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="41">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=53&amp;verusuario=403">Guía Responsabilidad Incondicional</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="53" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=182&amp;verusuario=403">Guía Responsabilidad Incondicional HAPSA</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="182">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=184&amp;verusuario=403">Guía Cultura y Visión Compartida HAPSA</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="184">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=68&amp;verusuario=403">Guía Desayuno de Trabajo</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="68">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=71&amp;verusuario=403">Guía Confianza</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="71">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=72&amp;verusuario=403">Guía Técnicas Conversacionales</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="72">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=98&amp;verusuario=403">Guía Resultados Extraordinarios -SE-</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="98">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=69&amp;verusuario=403">Guía Resultados Extraordinarios</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="69">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=86&amp;verusuario=403">Guía Logros y Obstáculos</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="86">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=87&amp;verusuario=403">Guía Urgente Vs Importante</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="87">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=138&amp;verusuario=403">Guía Nuevas Funciones y Responsabilidades</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="138">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=139&amp;verusuario=403">Guía Feedback Cliente Interno</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="139">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=101&amp;verusuario=403">Caso de Negociación Rho</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="101">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=166&amp;verusuario=403">Caso de Negociación Gafka SA-GARBARILLO</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="166" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=160&amp;verusuario=403">Caso Passat TSI 2.0</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="160">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=157&amp;verusuario=403">Toma de decisión sistémica-Análisis de escenarios</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="157">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=88&amp;verusuario=403">Guía Preguntas Movilizadoras</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="88">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=147&amp;verusuario=403">Modelo de Atención al Cliente y Calidad de Servicio</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="147">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=149&amp;verusuario=403">Modelo de Atención al cliente y calidad de servicio (Garantizar exp. compra)</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="149">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=148&amp;verusuario=403">Modelo de Atención al Cliente y Calidad de servicio (Situaciones Críticas)</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="148">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=150&amp;verusuario=403">Modelo de Atención al Cliente y Calidad de Servicios (Exp. Positiva)</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="150">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=151&amp;verusuario=403">Modelo Atención al cliente y calidad de servicio (Exp. Negativa)</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="151">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=52&amp;verusuario=403">Informe Cierre del Programa</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="52">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=46&amp;verusuario=403">Evaluación del Programa</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="46">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=155&amp;verusuario=403">Guía Autoevaluación del Programa.</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="155">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=161&amp;verusuario=403">Ideas Extraordinarias</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="161" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=164&amp;verusuario=403">Ideas Extraordinarias- Más y Mejores resultados en la Gestión comercial </a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="164">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=169&amp;verusuario=403">Logrando RESE en tu Sucursal</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="169" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=162&amp;verusuario=403">Guía Enseñar a Enseñar</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="162" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=110&amp;verusuario=403">Caso Intel Corporation</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="110">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=167&amp;verusuario=403">Gestión de RR.HH</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="167" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=173&amp;verusuario=403">Negociación Hapsa</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="173">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=168&amp;verusuario=403">Guía EMC (Estar Más Cerca)-Feedback</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="168" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=174&amp;verusuario=403">Guía EMC (Estar Más Cercar)-Feedback II</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="174">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=176&amp;verusuario=403">Guía descripción de puesto actual y futuro </a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="176">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=183&amp;verusuario=403">Guía descripción de puesto actual - superior</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="183">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=178&amp;verusuario=403">Guía Desarrollo Nuevas Competencias </a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="178">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=179&amp;verusuario=403">Guía Organigrama Actual Vs Futuro </a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="179">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=188&amp;verusuario=403">Vinculos Efectivos y Ontología del Lenguaje Hipódromo</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="188">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=186&amp;verusuario=403">Planificación Operativa Hipódromo</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="186">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=189&amp;verusuario=403">Redes de Servicio Interno Hipódromo</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="189">
+</td></tr><tr><td style="border-top:2px solid #4AB2D7;"><b>E-Videos</b></td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=35&amp;verusuario=403">Con Mamá me comunico  mejor</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="35">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=37&amp;verusuario=403">Impossible is Nothing</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="37">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=38&amp;verusuario=403">Barrera: Animarse a más!</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="38">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=36&amp;verusuario=403">Sacá tu Lobo Interior</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="36">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=47&amp;verusuario=403">Pensamiento Sistémico</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="47">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=48&amp;verusuario=403">El Gladiador</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="48">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=49&amp;verusuario=403">Rey León-Circle Of Life- Español</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="49">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=50&amp;verusuario=403">Rey León -Circle Of Life- English</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="50">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=55&amp;verusuario=403">Yo no fuí, fue el Perro</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="55">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=66&amp;verusuario=403">Aprendizaje, Homero Thompson</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="66">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=143&amp;verusuario=403">Más de lo mismo....</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="143">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=67&amp;verusuario=403">Paul Potts, Caso Real</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="67">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=145&amp;verusuario=403">Historia de un letrero</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="145">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=142&amp;verusuario=403">Discurso Steve Jobs -Standford-</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="142">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=85&amp;verusuario=403">Pensamientos-Paulo Cohelo-</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="85">
+</td></tr><tr><td style="border-top:2px solid #4AB2D7;"><b>E-Lecturas</b></td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=45&amp;verusuario=403">Quinta Disciplina Capítulo I</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="45">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=60&amp;verusuario=403">Quinta Disciplina Capítulo II</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="60">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=61&amp;verusuario=403">Quinta Disciplina Capítulo III</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="61">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=62&amp;verusuario=403">Quinta Disciplina Capítulo IV</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="62">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=63&amp;verusuario=403">Quinta Disciplina Capítulo V</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="63">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=64&amp;verusuario=403">Quinta Disciplina Capítulo VI</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="64">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=65&amp;verusuario=403">Quinta Disciplina Capítulo VII</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="65" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=144&amp;verusuario=403">Feedback</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="144">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=17&amp;verusuario=403">Differentiate or Die</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="17">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=44&amp;verusuario=403">Poema del éxito</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="44">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=18&amp;verusuario=403">The Human Equation</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="18">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=19&amp;verusuario=403">Hidden Value</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="19">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=21&amp;verusuario=403">Estrategia de Negocios</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="21">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=24&amp;verusuario=403">Co opetition</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="24">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=22&amp;verusuario=403">La Empresa del 2020</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="22">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=20&amp;verusuario=403">The Dance Of Change</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="20">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=23&amp;verusuario=403">Mananging The Dream</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="23">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=33&amp;verusuario=403">Winning Through Innovation</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="33">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=28&amp;verusuario=403">El Cristal Con el que se mira</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="28">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=26&amp;verusuario=403">Misión Imposible</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="26">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=27&amp;verusuario=403">Managing Corporate Lifecycles</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="27">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=25&amp;verusuario=403">El Futuro está Escrito</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="25">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=31&amp;verusuario=403">La Honestidad como Politica</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="31">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=30&amp;verusuario=403">Entrevista Torcuato Di-Tella</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="30">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=29&amp;verusuario=403">Entrevista a Rosendo Fraga</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="29">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=32&amp;verusuario=403">Hidden Champions</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="32">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=42&amp;verusuario=403">Liderazgo Basado en Resultados</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="42" checked="">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=158&amp;verusuario=403">Liderazgo Basado en Resultados II</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="158">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=43&amp;verusuario=403">Socio Estratégico - RR. HH Champions-</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="43">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=70&amp;verusuario=403">Algo muy Grave -García Marquez-</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="70">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=73&amp;verusuario=403">HC Cambio Organizacional</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="73">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=74&amp;verusuario=403">HC Un desafío: La retención de talentos</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="74">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=76&amp;verusuario=403">HC Negociar Sistemicamente</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="76">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=75&amp;verusuario=403">HC Cuando la Diversidad hace la diferencia</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="75">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=77&amp;verusuario=403">HC Los Alcances de la Evaluación Psicotécnica</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="77">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=78&amp;verusuario=403">HC Desmitificando la Evaluación Psicotécnica</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="78">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=79&amp;verusuario=403">HC Responsabilidad Incondicional</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="79">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=80&amp;verusuario=403">HC Outdoor Training</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="80">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=81&amp;verusuario=403">HC Comunicación Interna Parte I y II</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="81">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=82&amp;verusuario=403">HC Mobbing: Acoso Moral</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="82">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=89&amp;verusuario=403">HC- Gestión por Competencia Orientada a Resultados</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="89">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=90&amp;verusuario=403">HC-Motivarte</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="90">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=91&amp;verusuario=403">HC-Teoría del Caos aplicada en procesos de cambio</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="91">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=92&amp;verusuario=403">HC-¿Confort o estiramiento? Ampliar tus límites</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="92">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=93&amp;verusuario=403">HC-Competitividad en equipos de Alto Desempeño </a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="93">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=94&amp;verusuario=403">HC-Planeamiento estratégico</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="94">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=95&amp;verusuario=403">HC-Habilidades Comunicacionales</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="95">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=96&amp;verusuario=403">HC-Administración Eficaz del tiempo</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="96">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=97&amp;verusuario=403">HC-Estilos de Liderazgo</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="97">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=100&amp;verusuario=403">Mentes Brillantes</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="100">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=140&amp;verusuario=403">Saber escuchar, un arte.</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="140">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=141&amp;verusuario=403">Liderazgo y Sustentabilidad</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="141">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=102&amp;verusuario=403">Si de acuerdo-Parte I</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="102">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=172&amp;verusuario=403">Gestión de Talentos</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="172">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=103&amp;verusuario=403">Si de acuerdo Parte II</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="103">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=104&amp;verusuario=403">Sí de acuerdo parte III</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="104">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=146&amp;verusuario=403">Mini Caso "El técnico y el Arquero" </a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="146">
+</td></tr><tr><td style="border-top:2px solid #4AB2D7;"><b>Programa-Negociación-</b></td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=113&amp;verusuario=403">Presentación del Programa</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="113">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=114&amp;verusuario=403">Objetivos Particulares</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="114">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=115&amp;verusuario=403">Nuestro Rol</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="115">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=116&amp;verusuario=403">Metodología</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="116">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=118&amp;verusuario=403">Resumé Mentores</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="118">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=117&amp;verusuario=403">Esquema Integral</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="117">
+</td></tr><tr><td style="border-top:2px solid #4AB2D7;"><b>Guías de Acción-Negociación</b></td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=120&amp;verusuario=403">Guía Compromiso</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="120">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=119&amp;verusuario=403">Guía de Relevamiento</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="119">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=121&amp;verusuario=403">Guía Diagnóstico Preeliminar y Descripción de Puesto</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="121">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=127&amp;verusuario=403">Resultados Extraordinarios-Negociación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="127">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=122&amp;verusuario=403">Test Estilo de Negociación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="122">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=137&amp;verusuario=403">Caso Ley de Gases Medicinales</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="137">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=112&amp;verusuario=403">Genericas Negociación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="112">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=125&amp;verusuario=403">Guía de Autodiagnóstico-Feedback 360</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="125">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=124&amp;verusuario=403">Guía Superando Dificultades y Resistencias</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="124">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=159&amp;verusuario=403">Superando dificultades y resistencias CPM</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="159">
+</td></tr><tr><td style="border-top:2px solid #4AB2D7;"><b>E-Lecturas-Negociación</b></td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=126&amp;verusuario=403">Poema del Exito</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="126">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=128&amp;verusuario=403">¿Cómo Negociar sin Ceder?- Parte I Resumida-</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="128">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=129&amp;verusuario=403">¿Cómo Negociar sin Ceder?- -Parte II Resumida-</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="129">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=130&amp;verusuario=403">¿Cómo Negociar sin ceder? - Parte III Resumida</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="130">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=132&amp;verusuario=403">Dinámica del Conflicto</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="132">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=134&amp;verusuario=403">¿Qué estilo debo adoptar para Negociar?</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="134">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=136&amp;verusuario=403">Las Mujeres están más dotadas para negociar</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="136">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=133&amp;verusuario=403">Ganar Ganar</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="133">
+</td></tr><tr><td>&nbsp;</td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=135&amp;verusuario=403">Confianza:Una forma de establecer principios en la negociación</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="135">
+</td></tr><tr><td style="border-top:2px solid #4AB2D7;"><b>E-Videos-Negociación</b></td><td style="border-top:2px solid #4AB2D7;"><a href="guias.php?idguia=131&amp;verusuario=403">Video-Erin Brockovich-Caso Real</a></td><td style="border-top:2px solid #4AB2D7;"><input type="checkbox" name="guia[]" value="131">
+</td></tr></tbody></table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).on("ready",function(){
+      $("#proveedor").on("change", function(){
+        if($("#proveedor").val()!=0){
+          $("#facilitador").css("display","block");
+        }else{
+          $("#facilitador").css("display","none");
+        }  
+      })
+    })
+    </script>
+  </body>
+  </html>

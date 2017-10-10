@@ -16,6 +16,7 @@
 @import "capacitacion";
 @import "login";
 @import "facilitador-dashboard";
+@import "capacitacion-reporte-guias";
   
 
 .space{
@@ -320,4 +321,9 @@ input:checked + .slider:before {
 .scroll300{
 	height: 300px;
     overflow: scroll;
+}
+
+
+.normal{
+	font-weight: normal !important;
 }

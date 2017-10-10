@@ -11,19 +11,23 @@
 			margin: 0;
 			border-top: 1px solid #ededed;
 			transition: .5s;
+			align-items: center;
 			&:first-child{
 				align-items: center;
 			}
 
 			li{
-				flex: 3;
+				flex: 6;
 				padding: 3px;
 				text-align: center;
 				&.large{
-					flex: 5;
+					flex: 10;
 					text-align: left;
 				}
 				&.mini{
+					flex: 2;
+				}
+				&.xmini{
 					flex: 1;
 				}
 				p{
@@ -180,6 +184,12 @@
 				}
 			}
 		}
+
+		&.vcenter{
+			ul{
+				align-items: center;
+			}
+		}
 	}
 
 
@@ -191,3 +201,16 @@
 	}
 }
 
+
+.yellow{
+	color: gold;
+}
+
+
+.red{
+	color: red;
+}
+
+.green{
+	color: limegreen;
+}
