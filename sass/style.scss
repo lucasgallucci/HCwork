@@ -15,6 +15,7 @@
 @import "estructura";
 @import "capacitacion";
 @import "login";
+@import "facilitador-dashboard";
   
 
 .space{
@@ -309,4 +310,8 @@ input:checked + .slider:before {
 
 .margintop10{
 	margin-top: 10px;
+}
+
+.marginright10{
+	margin-right: 10px;
 }

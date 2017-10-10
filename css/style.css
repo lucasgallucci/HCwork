@@ -645,6 +645,12 @@ nav {
           font-size: 10px;
           color: #aaa;
           margin-right: 3px; }
+      .table-list .table ul li ul.not-flex {
+        display: block;
+        text-align: left;
+        border: none; }
+        .table-list .table ul li ul.not-flex li {
+          text-align: left; }
     .table-list .table ul.pretitle {
       border-top: 5px solid #dcdcdc;
       text-align: left;
@@ -713,6 +719,14 @@ nav {
   .table-list .table.select ul:not(.title):hover {
     background: #e1f5fe;
     cursor: pointer; }
+  .table-list .table.left ul {
+    align-items: flex-start; }
+    .table-list .table.left ul li {
+      text-align: left; }
+      .table-list .table.left ul li:first-child {
+        font-weight: bold; }
+      .table-list .table.left ul li ul li:first-child {
+        font-weight: normal; }
 .table-list.double {
   overflow-x: scroll; }
   .table-list.double .table {
@@ -965,6 +979,47 @@ main {
     margin: 5px 0;
     font-size: 12px; }
 
+#facilitador-dashboard h4 {
+  text-transform: uppercase;
+  font-weight: 900; }
+#facilitador-dashboard .stats {
+  text-align: center; }
+  #facilitador-dashboard .stats h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0; }
+  #facilitador-dashboard .stats .big {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 900; }
+#facilitador-dashboard .asistencia {
+  padding-top: 30px; }
+  #facilitador-dashboard .asistencia ul {
+    display: flex;
+    list-style: none;
+    padding: 0; }
+    #facilitador-dashboard .asistencia ul.title {
+      font-weight: bold; }
+    #facilitador-dashboard .asistencia ul li {
+      flex: 1;
+      text-align: center; }
+      #facilitador-dashboard .asistencia ul li:first-child {
+        flex: 4;
+        text-align: left; }
+#facilitador-dashboard .temario {
+  padding-top: 30px; }
+  #facilitador-dashboard .temario ul {
+    display: flex;
+    list-style: none;
+    padding: 0; }
+    #facilitador-dashboard .temario ul.title {
+      font-weight: bold; }
+    #facilitador-dashboard .temario ul li {
+      flex: 1; }
+      #facilitador-dashboard .temario ul li:last-child {
+        flex: 4; }
+
 .space {
   margin: 20px 0; }
 
@@ -1193,5 +1248,8 @@ input:checked + .slider:before {
 
 .margintop10 {
   margin-top: 10px; }
+
+.marginright10 {
+  margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

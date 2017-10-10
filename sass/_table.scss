@@ -34,6 +34,15 @@
 						margin-right: 3px;
 					}
 				}
+
+				ul.not-flex{
+					display: block;
+					text-align: left;
+					border: none;
+					li{
+						text-align: left;
+					}
+				}
 			}
 
 			&.pretitle{
@@ -151,6 +160,23 @@
 				&:hover{
 					background: #e1f5fe;
 					cursor: pointer;
+				}
+			}
+		}
+
+		&.left{
+			ul{
+				align-items: flex-start;
+				li{	
+					text-align: left;
+					&:first-child{
+						font-weight: bold;
+					}
+					ul{
+						li:first-child{
+							font-weight: normal;
+						}
+					}
 				}
 			}
 		}
