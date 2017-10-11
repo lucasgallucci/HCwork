@@ -72,6 +72,24 @@
 					}
 				}
 			}
+			
+			&.subtitle{
+				background: $color1;
+				padding-left: 10px;
+				li{
+					p{
+						font-weight: 300;
+						font-size: 12px;
+						text-transform: uppercase;
+						color: white;
+					}
+					span{
+						display: inline-block;
+						margin-left: 10px;
+					}
+				}
+			}
+
 
 			&.total{
 				padding-left: 10px; 
@@ -161,6 +179,13 @@
 
 		&.select{
 			ul:not(.title){
+				&:hover{
+					background: #e1f5fe;
+					cursor: pointer;
+				}
+			}
+
+			ul:not(.subtitle){
 				&:hover{
 					background: #e1f5fe;
 					cursor: pointer;

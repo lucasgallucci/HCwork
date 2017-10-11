@@ -670,6 +670,17 @@ nav {
       .table-list .table ul.title li span {
         display: inline-block;
         margin-left: 10px; }
+    .table-list .table ul.subtitle {
+      background: #288AAD;
+      padding-left: 10px; }
+      .table-list .table ul.subtitle li p {
+        font-weight: 300;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: white; }
+      .table-list .table ul.subtitle li span {
+        display: inline-block;
+        margin-left: 10px; }
     .table-list .table ul.total {
       padding-left: 10px;
       background: #efefef !important;
@@ -720,6 +731,9 @@ nav {
           display: block;
           text-align: left; }
   .table-list .table.select ul:not(.title):hover {
+    background: #e1f5fe;
+    cursor: pointer; }
+  .table-list .table.select ul:not(.subtitle):hover {
     background: #e1f5fe;
     cursor: pointer; }
   .table-list .table.left ul {
