@@ -670,6 +670,10 @@ nav {
       .table-list .table ul.title li span {
         display: inline-block;
         margin-left: 10px; }
+    .table-list .table ul.title-clear {
+      background: #ededed; }
+      .table-list .table ul.title-clear li p {
+        color: #242424; }
     .table-list .table ul.subtitle {
       background: #288AAD;
       padding-left: 10px; }
@@ -751,6 +755,13 @@ nav {
   .table-list.double .table {
     width: 200%; }
 
+ul.not-flex {
+  display: block !important;
+  text-align: left !important;
+  border: none; }
+  ul.not-flex li {
+    text-align: left !important; }
+
 .yellow {
   color: gold; }
 
@@ -759,6 +770,9 @@ nav {
 
 .green {
   color: limegreen; }
+
+.blue {
+  color: #288AAD; }
 
 .table-matriz .table {
   padding: 0;
@@ -1060,6 +1074,16 @@ main {
   #capacitacion-reporte-guias .asignar-guias:hover {
     background: none !important; }
 
+#sed-calificacion input {
+  max-width: 80px; }
+#sed-calificacion span {
+  margin: 0; }
+
+#sed-asignacion-competencias-espeficas-puestos .checkbox {
+  display: inline-block; }
+  #sed-asignacion-competencias-espeficas-puestos .checkbox label {
+    min-height: 14px; }
+
 .space {
   margin: 20px 0; }
 
@@ -1291,6 +1315,9 @@ input:checked + .slider:before {
 
 .marginright10 {
   margin-right: 10px; }
+
+.marginleft20 {
+  margin-left: 20px !important; }
 
 .scroll300 {
   height: 300px;

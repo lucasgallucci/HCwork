@@ -72,6 +72,15 @@
 					}
 				}
 			}
+
+			&.title-clear{
+				background: #ededed;
+				li{
+					p{
+						color: #242424;
+					}
+				}
+			}
 			
 			&.subtitle{
 				background: $color1;
@@ -227,6 +236,15 @@
 }
 
 
+ul.not-flex{
+		display: block !important;
+		text-align: left !important;
+		border: none;
+		li{
+			text-align: left !important;
+		}
+	}
+
 .yellow{
 	color: gold;
 }
@@ -238,4 +256,8 @@
 
 .green{
 	color: limegreen;
+}
+
+.blue{
+	color: $color1;
 }

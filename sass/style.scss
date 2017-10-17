@@ -17,6 +17,8 @@
 @import "login";
 @import "facilitador-dashboard";
 @import "capacitacion-reporte-guias";
+@import "sed-calificacion";
+@import "sed-asignacion-competencias-espeficas-puestos";
   
 
 .space{
@@ -315,6 +317,11 @@ input:checked + .slider:before {
 
 .marginright10{
 	margin-right: 10px;
+}
+
+
+.marginleft20{
+	margin-left: 20px !important;
 }
 
 
