@@ -1084,6 +1084,30 @@ main {
   #sed-asignacion-competencias-espeficas-puestos .checkbox label {
     min-height: 14px; }
 
+#sed-asignacion-de-evaluadores .select-alto {
+  height: 200px; }
+
+#sed-evaluaciones .ficha {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #sed-evaluaciones .ficha p {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+    #sed-evaluaciones .ficha p span {
+      text-transform: uppercase;
+      margin-right: 10px; }
+#sed-evaluaciones .instrucciones {
+  padding: 15px;
+  margin-bottom: 30px; }
+#sed-evaluaciones .firma {
+  margin-top: 30px; }
+  #sed-evaluaciones .firma .firmar {
+    min-height: 120px;
+    border-bottom: 1px dashed #ccc; }
+  #sed-evaluaciones .firma p {
+    margin: 3px 0; }
+
 .space {
   margin: 20px 0; }
 
@@ -1310,11 +1334,15 @@ input:checked + .slider:before {
 .margintop20 {
   margin-top: 20px; }
 
+.width150 {
+  width: 150px; }
+
 .margintop10 {
   margin-top: 10px; }
 
 .marginright10 {
-  margin-right: 10px; }
+  margin-right: 10px;
+  display: inline-block; }
 
 .marginleft20 {
   margin-left: 20px !important; }

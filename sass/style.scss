@@ -19,7 +19,8 @@
 @import "capacitacion-reporte-guias";
 @import "sed-calificacion";
 @import "sed-asignacion-competencias-espeficas-puestos";
-  
+@import "sed-asignacion-de-evaluadores";
+@import "sed-evaluaciones";
 
 .space{
 	margin: 20px 0;
@@ -306,17 +307,22 @@ input:checked + .slider:before {
 
 }
 
+
 .margintop20{
 	margin-top: 20px;
 }
 
-
+.width150{
+	width: 150px;
+}
+ 
 .margintop10{
 	margin-top: 10px;
 }
 
 .marginright10{
 	margin-right: 10px;
+	display: inline-block;
 }
 
 

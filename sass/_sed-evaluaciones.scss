@@ -1,0 +1,31 @@
+#sed-evaluaciones{
+	.ficha{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		p{
+			border-bottom: 1px solid #ddd;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			span{
+				text-transform: uppercase;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.instrucciones{
+		padding: 15px;
+		margin-bottom: 30px;
+	}
+
+	.firma{
+		margin-top: 30px;
+		.firmar{
+			min-height: 120px;
+			border-bottom: 1px dashed #ccc;
+		}
+		p{
+			margin: 3px 0;
+		}
+	}
+}

@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HCwork</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body id="sed-asignacion-competencias-espeficas-puestos">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12">
+          <h3>Dimensión 360 <a class="btn btn-primary pull-right btn-sm" type="button" data-toggle="modal" data-target="#competencia">crear</a></h3>
+        
+          <div class="table-list">
+            <div class="table">
+              <ul class="title">
+                <li class="large"><p class="text-left">Tipo</p></li>
+                <li class="large"><p>Nombre</p></li>
+                <li class="xmini"><p>Acciones</p></li>
+              </ul>
+
+              <ul>
+                <li class="large"><p class="text-left">Autoevaluación</p></li>
+                <li class="large">-</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+              <ul>
+                <li class="large"><p class="text-left">Jefe</p></li>
+                <li class="large">José Quintana</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+              <ul>
+                 <li class="large"><p class="text-left">Jefe del Jefe</p></li>
+                <li class="large">Daniel Salaberri</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+
+
+              <ul>
+                <li class="large"><p class="text-left">Par</p></li>
+                <li class="large">Teresa Canto</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+              <ul>
+                <li class="large"><p class="text-left">Par</p></li>
+                <li class="large">Celeste Pissano</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade bs-example-modal-lg" id="competencia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Nueva dimensión</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="well">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-4 control-label">Nivel</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" id="selector">
+                      <option value="">Autoevaluación</option>
+                      <option value="1">Jefe del jefe</option>
+                      <option value="1">Jefe directo</option>
+                      <option value="1">Pares</option>
+                      <option value="2">Colaboradores</option>
+                      <option value="2">Proveedores/aliado estratégico</option>
+                      <option value="2">Clientes</option>
+                      <option value="2">Otros</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="form-group" id="nombre" style="display: none">
+                  <label for="inputEmail3" class="col-sm-4 control-label">Persona</label>
+                  <div class="col-sm-8">
+                    <select class="form-control">
+                      <option>Martín Olivares</option>
+                      <option>Josefina Mancusso</option>
+                      <option>Daniel Maldivia</option>
+                      <option>Silvia Fine</option>
+                      <option>Martín Olivares</option>
+                      <option>Josefina Mancusso</option>
+                      <option>Daniel Maldivia</option>
+                      <option>Silvia Fine</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="form-group" id="colaborador" style="display: none">
+                  <label for="inputEmail3" class="col-sm-4 control-label">Proveedor</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" id="scol">
+                      <option value="">Hucap</option>
+                      <option value="">Consultora 2</option>
+                      <option value="">Colaborador</option>
+                      <option value="">Proveedor</option>
+                      <option value="">Empresa x</option>
+                      <option value="otro">Nuevo</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="well" id="alta" style="display: none">
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Nombre / Razón Social</label>
+                    <div class="col-sm-8">
+                      <input class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Referente</label>
+                    <div class="col-sm-8">
+                      <input class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">DNI / CUIT / CUIL</label>
+                    <div class="col-sm-8">
+                      <input class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Comentarios</label>
+                    <div class="col-sm-8">
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Persistir</label>
+                    <div class="col-sm-8 checkbox">
+                      <input type="checkbox" class="form-control">
+                    </div>
+                  </div>
+                
+
+                  <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-4 control-label"></label>
+                    <div class="col-sm-8">
+                      <input class="form-control" type="submit">Guardar</input>
+                    </div>
+                  </div>
+
+                </div>
+              </div><!-- fin well -->
+            
+            </form>
+          </div>
+        
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default">Guardar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+      $(document).on("ready",function(){
+        
+        $("#selector").on("change",function(){
+          if((this).value==1){
+            $("#nombre").css("display","block");
+          }else{
+            $("#nombre").css("display","none");
+          }
+
+          if((this).value==2){
+            $("#colaborador").css("display","block");
+          }else{
+            $("#colaborador").css("display","none");
+          }
+        })
+      
+
+        $("#scol").on("change",function(){
+          if((this).value=="otro"){
+            $("#alta").css("display","block");
+             }else{
+            $("#alta").css("display","none");
+          }
+        })
+
+
+        
+      })
+    </script>
+
+  </body>
+</html>
