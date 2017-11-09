@@ -21,9 +21,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
   </head>
-  <body id="sed-asignacion-de-evaluadores">
 
-     <nav class="navbar navbar-default">
+  <body>
+
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -66,78 +67,35 @@
     </nav>
 
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h3>Reporte Evaluación por Evaluadores</h3>
+    <ul>
+      <li>proyecto
+        <ul>
+          <li>configuracion
+            <ul>
+              <li>General (las que estan sueltas en el listado de proyecto)</li>
+              <li>escalas (sed-escala-de-evaluacion.html)</li>
+              <li>Semaforizar escalas(sed-calificacion.html)</li>
+              <li>Clasificar competencias (sed-clasificar-competencias.html)</li>
+              <li>Asignacion de Competencias Especificas a Puestos de Trabajo (sed-asignacion-competencias-especificas-puestos.html) Agregar filtros: dirección, gerencia y área</li>
+              <li>Dimensiones 360 (sed-dimensiones-evaluador.html) modificar ver cuaderno</li>
+            </ul>
+          </li>
 
-          <div class="well">
-            <form class="form-inline">
-              <div class="form-group">
-                <label for="exampleInputName2">Evaluador:</label>
-                <select class="form-control marginright10 width150">
-                  <option>- seleccionar evaluador -</option>
-                  <option>Javier Salmo</option>
-                  <option>Cintia Rodriguez</option>
-                  <option>Mara Gonzalez</option>
-                  <option>Pablo Petrola</option>
-                  <option>Julio Sindio</option>
-                  <option>Javier Salmo</option>
-                  <option>Cintia Rodriguez</option>
-                  <option>Mara Gonzalez</option>
-                  <option>Pablo Petrola</option>
-                  <option>Julio Sindio</option>
-                </select>                
-              </div>
-            </form>
-          </div>
+          <li>Evaluadores
+            <ul>
+              <li>Asignacion de Empleados a Evaluar (sed-asignacion-de-evaluadores.html)</li>
+              <li>Evaluadores vs Evaluados FALTA (ver en hucap demo)</li>
+              <li>Tablero de gestión de evaluadores (sed-evaluaciones-por-evaluador.html)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
 
-          <div class="well">
-            <h4>Evaluaciones realizadas por: <strong>Díaz, Gonzalo.</strong></h4>
-            
-            <div class="text-center">
-              <img src="imagenes/sed-evaluaciones-por-evaluador-grafico.jpg">
-            </div>
-            
-            <hr>
-            <div class="table-list">
-              <div class="table">
-                <ul class="title">
-                  <li class="large"><p class="text-left">Empleado</p></li>
-                  <li><p>Objetivo</p></li>
-                  <li><p>Competencia</p></li>
-                  <li><p>Evaluación final</p></li>
-                  <li><p>Evaluación Superior</p></li>
-                  <li><p>Evaluación del empleado</p></li>
-                  <li><p>Comparativa ambas evaluaciones</p></li>
-                  <li><p>Validacion del supervisor directo</p></li>
-                  <li><p>Planes de seguimiento</p></li>
-                  <li><p>Reg Feedback</p></li>
-                  <li><p>Brecha - Evolución otros períodos</p></li>
-                </ul>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-                <ul class="">
-                  <li class="large"><p class="text-left">Devon, Sebastián</p></li>
-                  <li><p>0.00 <span class="fa fa-circle red"></span></p></li>
-                  <li><p>52.5 <span class="fa fa-circle red"></span></p></li>
-                  <li><p>52.5 <span class="fa fa-circle red"></span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link marginright10"></span>  <span class="fa fa-circle yellow"></span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     
-  
-
   </body>
-</html>
+
+  </html>

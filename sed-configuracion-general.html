@@ -69,74 +69,59 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h3>Reporte Evaluación por Evaluadores</h3>
-
+          <h3>Sistema de Evaluación de Desempeño</h3>
+          <h5 class="text-uppercase">Configuración general</h5>
           <div class="well">
-            <form class="form-inline">
+            <form class="form-horizontal">
               <div class="form-group">
-                <label for="exampleInputName2">Evaluador:</label>
-                <select class="form-control marginright10 width150">
-                  <option>- seleccionar evaluador -</option>
-                  <option>Javier Salmo</option>
-                  <option>Cintia Rodriguez</option>
-                  <option>Mara Gonzalez</option>
-                  <option>Pablo Petrola</option>
-                  <option>Julio Sindio</option>
-                  <option>Javier Salmo</option>
-                  <option>Cintia Rodriguez</option>
-                  <option>Mara Gonzalez</option>
-                  <option>Pablo Petrola</option>
-                  <option>Julio Sindio</option>
-                </select>                
+                <label for="exampleInputName2" class="col-md-3 control-label">Evaluar objetivos:</label>
+                <div class="col-md-9">
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Habilitado
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Deshabilitado
+                  </label>            
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <label for="exampleInputName2" class="col-md-3 control-label">Modo Edición:</label>
+                <div class="col-md-9">
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Habilitado
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Deshabilitado
+                  </label>  
+                </div>          
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputName2" class="col-md-3 control-label">Congelar estructura de empleados:</label>
+                <div class="col-md-9">
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Habilitado
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Deshabilitado
+                  </label>   
+                </div>         
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-default">Guardar</button>
+                </div>
               </div>
             </form>
           </div>
-
-          <div class="well">
-            <h4>Evaluaciones realizadas por: <strong>Díaz, Gonzalo.</strong></h4>
-            
-            <div class="text-center">
-              <img src="imagenes/sed-evaluaciones-por-evaluador-grafico.jpg">
-            </div>
-            
-            <hr>
-            <div class="table-list">
-              <div class="table">
-                <ul class="title">
-                  <li class="large"><p class="text-left">Empleado</p></li>
-                  <li><p>Objetivo</p></li>
-                  <li><p>Competencia</p></li>
-                  <li><p>Evaluación final</p></li>
-                  <li><p>Evaluación Superior</p></li>
-                  <li><p>Evaluación del empleado</p></li>
-                  <li><p>Comparativa ambas evaluaciones</p></li>
-                  <li><p>Validacion del supervisor directo</p></li>
-                  <li><p>Planes de seguimiento</p></li>
-                  <li><p>Reg Feedback</p></li>
-                  <li><p>Brecha - Evolución otros períodos</p></li>
-                </ul>
-
-                <ul class="">
-                  <li class="large"><p class="text-left">Devon, Sebastián</p></li>
-                  <li><p>0.00 <span class="fa fa-circle red"></span></p></li>
-                  <li><p>52.5 <span class="fa fa-circle red"></span></p></li>
-                  <li><p>52.5 <span class="fa fa-circle red"></span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link marginright10"></span>  <span class="fa fa-circle yellow"></span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                  <li><p><span class="fa fa-external-link"> </span></p></li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
+  
         </div>
       </div>
     </div>
-    
+
   
 
   </body>

@@ -23,12 +23,59 @@
   </head>
   <body id="sed-asignacion-competencias-espeficas-puestos">
 
+     <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Configuración <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="sed-configuracion-general.html">Configuración General</a></li>
+                <li><a href="sed-escala-de-evaluacion.html">Escalas</a></li>
+                <li><a href="sed-calificacion.html">Semaforizar escalas</a></li>
+                <li><a href="sed-clasificar-competencias.html">Clasificar competencias</a></li>
+                <li><a href="sed-asignacion-competencias-especificas-puestos.html">Asignación de competencias específicas a puestros de trabajo</a></li>
+                <li><a href="sed-dimensiones-evaluador.html">Dimensiones 360</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Evaluadores <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="sed-asignacion-de-evaluadores.html">Asignacion de Empleados a Evaluar</a></li>
+                <li><a href="sed-evaluadores-vs-evaluados.html">Evaluadores vs Evaluados</a></li>
+                <li><a href="sed-evaluaciones-por-evaluador.html">Tablero de gestión de evaluadores</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
     <div class="container">
       <div class="row">
 
         <div class="col-xs-12">
-          <h3>Dimensión 360 <a class="btn btn-primary pull-right btn-sm" type="button" data-toggle="modal" data-target="#competencia">crear</a></h3>
+          <h3>Dimensión 360</h3>
         
+
+          <hr>
+          <h4>Área: Recursos humanos <a class="btn btn-primary pull-right btn-sm" type="button" data-toggle="modal" data-target="#competencia">Agregar evaluación</a></h4>
+          <br>
           <div class="table-list">
             <div class="table">
               <ul class="title">
@@ -71,6 +118,58 @@
 
             </div>
           </div>
+          <hr>
+
+          <h4>Nivel: Gerentes <a class="btn btn-primary pull-right btn-sm" type="button" data-toggle="modal" data-target="#competencia">Agregar evaluación</a></h4>
+          <br>
+          <div class="table-list">
+            <div class="table">
+              <ul class="title">
+                <li class="large"><p class="text-left">Tipo</p></li>
+                <li class="large"><p>Nombre</p></li>
+                <li class="xmini"><p>Acciones</p></li>
+              </ul>
+
+              <ul>
+                <li class="large"><p class="text-left">Autoevaluación</p></li>
+                <li class="large">-</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+              <ul>
+                <li class="large"><p class="text-left">Jefe</p></li>
+                <li class="large">José Quintana</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+              <ul>
+                 <li class="large"><p class="text-left">Jefe del Jefe</p></li>
+                <li class="large">Daniel Salaberri</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+
+
+              <ul>
+                <li class="large"><p class="text-left">Par</p></li>
+                <li class="large">Teresa Canto</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+              <ul>
+                <li class="large"><p class="text-left">Par</p></li>
+                <li class="large">Celeste Pissano</li>
+                <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+              </ul>
+
+            </div>
+          </div>
+          <hr>
+
+          <div class="text-center">
+            <a class="btn btn-primary btn-lg">Agregar dimensión</a>
+          </div>
+
         </div>
       </div>
     </div>
