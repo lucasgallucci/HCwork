@@ -86,35 +86,24 @@
         <div class="col-xs-12">
           <h3>Dimensión 360</h3>
 
-          <h4>Evaluaciones por nivel<a class="btn btn-primary pull-right btn-sm" type="button" data-toggle="modal" data-target="#competencia">Agregar evaluación</a></h4>
+          <h4>Evaluaciones <small>Área: Recursos Humanos</small><a class="btn btn-primary pull-right btn-sm" type="button" data-toggle="modal" data-target="#dimension">Agregar dimensión</a></h4>
           <br>
           <div class="table-list">
             <div class="table vtop with-options select">
               <ul class="title">
-                <li class=""><p class="text-left">Nivel</p></li>
+                <li class=""><p class="text-left">Puesto</p></li>
+                <li class=""><p class="text-left">Persona</p></li>
                 <li class=""><p>Dimensión</p></li>
-                <li class="mini"><p>Objetivo</p></li>
-                <li class="mini"><p>Competencia</p></li>
-                <li class="xmini"><p></p></li>
+                <li class=""><p>Evalua</p></li>
+                <li class="xmini"></li>
               </ul>
 
               <ul class="">
-                <li class=""><p class="text-left">Gerencia</p></li>
-                <li class=""><p>
-                  <ul class="not-flex">
-                    <li>Autoevaluación</li>
-                    <li>Jefe del jefe</li>
-                    <li>Jefe directo</li>
-                    <li>Pares</li>
-                    <li>Colaboradores</li>
-                    <li>Proveedores/aliado estratégico</li>
-                    <li>Clientes</li>
-                    <li>Otros</li>
-                  </ul></p>
-                </li>
-                <li class="mini"><span class="fa fa-check"></span></li>
-                <li class="mini"><span class="fa fa-check"></span></li>
-                <li class="xmini">
+                <li class=""><p class="text-left">Gerente de RRHH</p></li>
+                <li class=""><p class="text-left">Daniela Diaz</p></li>
+                <li class=""><p>Colaborador</p></li>
+                <li class=""><p>Damian Padilla</p></li>
+                 <li class="xmini">
                     <span class="options">
                       <span class="fa fa-cog"></span>
                         <div class="menu">
@@ -126,49 +115,36 @@
                     </span>
                 </li>
               </ul>
-            </div>
-          </div>
-          
-         
 
-          <hr>
-
-
-          <h4>Evaluaciones por área<a class="btn btn-primary pull-right btn-sm" type="button" data-toggle="modal" data-target="#competencia">Agregar evaluación</a></h4>
-          <br>
-          <div class="table-list">
-            <div class="table vtop with-options select">
-              <ul class="title">
-                <li class=""><p class="text-left">Área</p></li>
-                <li class=""><p>Dimensión</p></li>
-                <li class="mini"><p>Objetivo</p></li>
-                <li class="mini"><p>Competencia</p></li>
-                <li class="xmini"><p></p></li>
+              <ul class="">
+                <li class=""><p class="text-left">Gerente de RRHH</p></li>
+                <li class=""><p class="text-left">Daniela Diaz</p></li>
+                <li class=""><p>Jefe</p></li>
+                <li class=""><p>Sandra Pétalo</p></li>
+                 <li class="xmini">
+                    <span class="options">
+                      <span class="fa fa-cog"></span>
+                        
+                    </span>
+                </li>
               </ul>
 
               <ul class="">
-                <li class=""><p class="text-left">Recursos Humano</p></li>
-                <li class=""><p>
-                  <ul class="not-flex">
-                    <li>Autoevaluación</li>
-                    <li>Jefe del jefe</li>
-                    <li>Jefe directo</li>
-                    <li>Pares</li>
-                    <li>Colaboradores</li>
-                    <li>Proveedores/aliado estratégico</li>
-                    <li>Clientes</li>
-                    <li>Otros</li>
-                  </ul></p>
+                <li class=""><p class="text-left">Gerente de RRHH</p></li>
+                <li class=""><p class="text-left">Daniela Diaz</p></li>
+                <li class=""><p>Proveedor</p></li>
+                <li class=""><p>Hucap</p></li>
+                <li class="xmini">
+                    <span class="options">
+                      <span class="fa fa-cog"></span>
+                        
+                    </span>
                 </li>
-                <li class="mini"><span class="fa fa-check"></span></li>
-                <li class="mini"><span class="fa fa-check"></span></li>
-                <li class="xmini"><p><span class="fa fa-cog"></p></li>
               </ul>
-
-
 
             </div>
           </div>
+
 
         </div>
       </div>
@@ -190,14 +166,22 @@
                   <div class="col-sm-8">
                     <select class="form-control" id="selector">
                       <option value="">Autoevaluación</option>
-                      <option value="1">Jefe del jefe</option>
+                      <option value="3">Jefe del jefe</option>
                       <option value="1">Jefe directo</option>
                       <option value="1">Pares</option>
-                      <option value="2">Colaboradores</option>
+                      <option value="4">Colaboradores</option>
                       <option value="2">Proveedores/aliado estratégico</option>
                       <option value="2">Clientes</option>
                       <option value="2">Otros</option>
                     </select>
+                  </div>
+                </div>
+
+
+                <div class="form-group" id="disable" style="display: none">
+                  <label for="inputEmail3" class="col-sm-4 control-label">Persona</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control" disabled value="Damian Selisbe">
                   </div>
                 </div>
 
@@ -215,6 +199,23 @@
                       <option>Daniel Maldivia</option>
                       <option>Silvia Fine</option>
                     </select>
+                  </div>
+                </div>
+
+                <div class="form-group" id="multiple" style="display: none">
+                  <label for="inputEmail3" class="col-sm-4 control-label">Persona</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" multiple>
+                      <option>Martín Olivares</option>
+                      <option>Josefina Mancusso</option>
+                      <option>Daniel Maldivia</option>
+                      <option>Silvia Fine</option>
+                      <option>Martín Olivares</option>
+                      <option>Josefina Mancusso</option>
+                      <option>Daniel Maldivia</option>
+                      <option>Silvia Fine</option>
+                    </select>
+                    <small>Puede seleccionar varios manteniendo la tecla CONTROL presionada</small>
                   </div>
                 </div>
 
@@ -257,6 +258,20 @@
                   </div>
 
                   <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Usuario</label>
+                    <div class="col-sm-8">
+                      <input class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Password</label>
+                    <div class="col-sm-8">
+                      <input class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
                     <label for="inputEmail3" class="col-sm-4 control-label">Comentarios</label>
                     <div class="col-sm-8">
                       <textarea class="form-control"></textarea>
@@ -264,9 +279,11 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-4 control-label">Persistir</label>
-                    <div class="col-sm-8 checkbox">
-                      <input type="checkbox" class="form-control">
+                    <div class="checkbox col-md-offset-4">
+                      <label>
+                        <input type="checkbox" value="">
+                        Persistir
+                      </label>
                     </div>
                   </div>
                 
@@ -274,7 +291,7 @@
                   <div class="form-group">
                   <label for="inputEmail3" class="col-sm-4 control-label"></label>
                     <div class="col-sm-8">
-                      <input class="form-control" type="submit">Guardar</input>
+                      <input class="form-control" type="submit">
                     </div>
                   </div>
 
@@ -310,6 +327,18 @@
             $("#colaborador").css("display","block");
           }else{
             $("#colaborador").css("display","none");
+          }
+
+          if((this).value==3){
+            $("#disable").css("display","block");
+          }else{
+            $("#disable").css("display","none");
+          }
+
+           if((this).value==4){
+            $("#multiple").css("display","block");
+          }else{
+            $("#multiple").css("display","none");
           }
         })
       
