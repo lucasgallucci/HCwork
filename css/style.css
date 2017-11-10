@@ -750,6 +750,8 @@ nav {
         font-weight: normal; }
   .table-list .table.vcenter ul {
     align-items: center; }
+  .table-list .table.vtop ul {
+    align-items: start !important; }
 .table-list.double {
   overflow-x: scroll; }
   .table-list.double .table {
