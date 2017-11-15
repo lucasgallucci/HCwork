@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HCwork</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h3>Filtros</h3>
+
+          <div class="well">
+
+            <div class="table-list">
+              <div class="table">
+                <ul class="title">
+                  <li class=""><p class="text-left">Filtro</p></li>
+                  <li class="large"><p class="text-left">Seleccion</p></li>
+                  <li class="mini"><p>Total de personas</p></li>
+                  <li class="mini"><p>Seleccionadas</p></li>
+                  <li class="xmini"><p></p></li>
+                </ul>
+
+                <ul class="">
+                  <li class=""><p class="text-left">Gerentes de RRHH</p></li>
+                  <li class="large"><p class="text-left">Área==Recursos Humanos && Nivel==Gerentes</p></li>
+                  <li class="mini"><p>55</p></li>
+                  <li class="mini"><p>55</p></li>
+                  <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+                </ul>
+
+
+                <ul class="">
+                  <li class=""><p class="text-left">Directores Generales</p></li>
+                  <li class="large"><p class="text-left">Nivel==Director</p></li>
+                  <li class="mini"><p>40</p></li>
+                  <li class="mini"><p>22</p></li>
+                  <li class="xmini"><p><span class="fa fa-cog"></span></p></li>
+                </ul>
+
+               
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center margintop20">
+            <a href="" class="btn btn-primary">Nuevo Filtro</a>
+          </div>
+
+          <hr>
+
+
+          <div class="well">
+            <h5>Filtros de búsqueda</h5>
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-md-2 control-label">Nombre</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="text" placeholder="Asignale un nombre a este filtro">
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <hr>
+              </div>
+
+
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <a class="btn btn-primary">Agregar filtro por Nivel</a>
+                  <a class="btn btn-primary">Agregar filtro por Área</a>
+                  <a class="btn btn-primary">Agregar filtro por Puesto</a>
+                  <a class="btn btn-primary">Agregar filtro por Persona</a>
+                </div>
+              
+
+                <div class="col-xs-12">
+                  <hr>
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Área</label>
+                    <div class="col-md-10">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <select class="form-control">
+                            <option>==</option>
+                            <option>!=</option>
+                          </select>
+                        </div>
+
+                        <div class="col-md-8">
+                          <select class="form-control">
+                            <option>Marketing</option>
+                            <option>Ventas</option>
+                            <option>Recursos Humanos</option>
+                            <option>Legales</option>
+                          </select>
+                        </div>
+
+                        <div class="col-md-2">
+                          <select class="form-control">
+                            <option>&&</option>
+                            <option>||</option>
+                          </select>
+                        </div>
+                      </div>
+                     
+
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Nivel</label>
+                    <div class="col-md-10">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <select class="form-control">
+                            <option>==</option>
+                            <option>!=</option>
+                          </select>
+                        </div>
+
+                        <div class="col-md-8">
+                          <select class="form-control">
+                            <option>Ceo</option>
+                            <option>Directores</option>
+                            <option>Gerentes</option>
+                            <option>Subgerentes</option>
+                          </select>
+                        </div>
+                      
+
+                       <div class="col-md-2">
+                          <select class="form-control">
+                            <option>&&</option>
+                            <option>||</option>
+                          </select>
+                        </div>
+                     
+</div>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Puesto</label>
+                    <div class="col-md-10">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <select class="form-control">
+                            <option>==</option>
+                            <option>!=</option>
+                          </select>
+                        </div>
+
+                        <div class="col-md-8">
+                          <select class="form-control">
+                            <option>Gerente de Marketing</option>
+                            <option>Director de Marketing</option>
+                            <option>Diseñador Gráfico</option>
+                            <option>Desarrollador</option>
+                          </select>
+                        </div>
+
+                        <div class="col-md-2">
+                       
+                        </div>
+                      </div>
+                     
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+
+
+            </form>
+
+            <div class="col-xs-12">
+              <hr>
+            </div>
+
+            <div class="row">
+              <article class="col-xs-3 text-center">
+                <h5 class="text-uppercase">
+                  Áreas afectadas
+                </h5>
+                <h3>1</h3>
+              </article>
+
+              <article class="col-xs-3 text-center">
+                <h5 class="text-uppercase">
+                  Niveles afectados
+                </h5>
+                <h3>5</h3>
+              </article>
+
+              <article class="col-xs-3 text-center">
+                <h5 class="text-uppercase">
+                  Puestos afectados
+                </h5>
+                <h3>19</h3>
+              </article>
+
+              <article class="col-xs-3 text-center">
+                <h5 class="text-uppercase">
+                  Empleados afectados
+                </h5>
+                <h3>41</h3>
+              </article>
+            </div>
+
+
+            <div class="table-list">
+              <div class="table">
+                <ul class="title">
+                  <li class="xmini"><p class="text-left"><input type="checkbox"></p></li>
+                  <li class=""><p class="text-left">Empleado</p></li>
+                  <li class="large"><p>Motivo</p></li>
+                </ul>
+
+                <ul class="">
+                  <li class="xmini"><p class="text-left"><input type="checkbox"></p></li>
+                  <li class=""><p class="text-left">Javier Corvo</p></li>
+                  <li class="large"><p>Seleccion directa</p></li>
+                </ul>
+
+                <ul class="">
+                  <li class="xmini"><p class="text-left"><input type="checkbox"></p></li>
+                  <li class=""><p class="text-left">Miguel Terlizzi</p></li>
+                  <li class="large"><p>Por selección nivel gerentes</p></li>
+                </ul>
+
+                <ul class="">
+                  <li class="xmini"><p class="text-left"><input type="checkbox"></p></li>
+                  <li class=""><p class="text-left">Miguel Terlizzi</p></li>
+                  <li class="large"><p>Por selección área Recursos Humanos</p></li>
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+
+   
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).on("ready",function(){
+    
+    })
+</script>
+  </body>
+</html>
