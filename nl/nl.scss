@@ -1,0 +1,381 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+$text-color: #333;
+
+html, body{
+	height: 100%;
+	font-family: roboto;
+	font-weight: 400;
+}
+body{
+	
+}
+nav{
+	padding: 15px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f0404+0,23538a+100 */
+	background: #0f0404; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #0f0404 0%, #23538a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #0f0404 0%,#23538a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #0f0404 0%,#23538a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0404', endColorstr='#23538a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	.user-nav{
+		color: white;
+		display: flex;
+		align-items: center;
+
+		.user{
+			display: flex;
+			align-items: center;
+			margin-right: 10px;
+			position: relative;
+			img{
+				max-width: 40px;
+				margin-right: 10px;
+			}
+
+			h4{
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+
+			.label{
+				font-weight: 300;
+				font-size: 10px;
+				margin: -4px 10px;
+				padding: 3px;
+			}
+		}
+
+		.notifications{
+			margin-right: 15px;
+			padding-right: 15px;
+			border-right: 1px solid #dcdcdc;
+			position: relative;
+		}
+		
+		.user-options, .notifications-panel{
+			position: absolute;
+		    background: white;
+		    top: 50px;
+		    padding: 10px 20px;
+		    left: 30px;
+		    border: 1px solid #bbb;
+		    color: $text-color;
+		    opacity: 1;
+		    transition: 1s;
+		    &:after{
+		    	content: "";
+			    width: 10px;
+			    height: 10px;
+			    background: white;
+			    position: absolute;
+			    top: -3px;
+			    z-index: 100;
+			    transform: rotate(45deg) translateX(-50%);
+			    display: inline-block;
+			    left: 50%;
+			    margin-left: 0px;
+			    border-top: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+		    }
+		    ul{
+		    	list-style: none;
+		    	padding: 0;
+		    	li{
+		    		padding: 10px 0;
+		    		.fa{
+		    			color: #ccc;
+		    			margin-right: 10px;
+		    		}
+		    	}
+		    
+			}
+		}
+
+		.user-options{
+			text-align: left;
+			.company{
+				overflow: hidden;
+				li{
+					margin: 2px 0;
+					padding: 5px 0;
+					img{
+						max-width: 30px;
+					}
+				}
+
+				&.close{
+					height: 0;
+				}
+			}
+		}
+
+		.notifications-panel{
+			transform: translateX(-50%);
+    		left: 4px;
+    		top: 40px;
+    		padding: 2px;
+    		width: 300px;
+    		z-index: 999;
+
+    		
+    		article{
+    			display: flex;
+    			z-index: 999;
+    			position: relative;
+    			padding: 5px;
+    			text-align: left;
+
+    			&.well{    
+				    border-radius: 0;
+				    border: none;
+				    box-shadow: none;
+				    background: #e7f9e4;
+				    margin-bottom: 2px;
+				}
+
+				&.admin{
+					background: rgba(51, 122, 183, 0.2);
+				}
+
+    			.icon{
+    				width: 35px;
+    			}
+
+    			.icon, .text{
+    				margin: 5px;
+    			}
+
+    			h5, h6{
+    				margin: 2px 0;
+    			}
+    			h6{
+    				text-transform: uppercase;
+    				font-size: 11px;
+    				font-weight: 300;
+    			}
+    		} 
+
+   			hr{
+				margin: 5px 0;
+			}
+		}
+	}
+
+
+}
+
+.estructura{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: stretch;
+
+
+	.menu-lateral{
+		height: 100%;
+		flex: 1;
+		max-width: 300px;
+		padding: 10px;
+		box-sizing: border-box;
+		position: relative;
+		top: 0px;
+		bottom: 0;
+		left: -250px;
+		transition: .5s;
+		z-index: 100;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#408fdd+0,23538a+93 */
+		background: #408fdd; /* Old browsers */
+		background: -moz-linear-gradient(-45deg, #408fdd 0%, #23538a 93%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg, #408fdd 0%,#23538a 93%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg, #408fdd 0%,#23538a 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#408fdd', endColorstr='#23538a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		overflow-x: scroll; 
+		padding-top: 70px;
+		box-sizing: border-box;
+		&.stacked{
+			left: 0;
+			
+		}
+
+		#stacked{
+			color: white;
+			display: inline-block;
+			font-size: 22px;
+			transition: .5s;
+			opacity: 0;
+			transform: rotate(60deg);
+			margin-right: 10px;
+		}
+
+		ul.menu{
+			padding: 0;
+			li{
+				margin: 5px 0;
+				border-radius: 2px;
+				display: block;
+				&:hover{
+					cursor: pointer;
+				}
+				div{
+					display: flex;
+					justify-content: space-between;		
+					color: white;
+					padding: 10px;
+					
+					p{
+						margin: 0;
+						text-transform: uppercase;
+						font-weight: 300;
+						font-size: 12px;
+					}
+					span{
+						font-size: 16px;
+					}
+				}
+				
+				&.selected{	
+					background: rgba(255,255,255,0.3);	
+				}
+
+				&.submenu{
+					ul{
+						li{
+							margin: 0;
+							div{
+								padding: 5px 10px;
+								font-size: 11px;
+							}
+						}
+					}
+					&.selected{
+						>div{
+							background: rgba(255,255,255,0.2);
+						}
+					}
+
+					ul{
+						list-style: none;
+						padding: 0;
+						li{
+							padding:0;
+							div{
+								display: flex;
+								justify-content: space-between;
+							}
+							&.selected{
+								div{
+									p{
+										font-weight: 700;
+									}
+								}
+								
+								background: none;
+							}
+						}	
+					}
+				}
+			}
+
+		}
+	}
+
+	main{
+		flex: 1;
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		padding: 30px;
+		margin-left: 50px;
+		padding-top: 70px;
+		box-sizing: border-box;
+		height: 100%;
+		overflow: auto;
+		transition: 1s;
+		&.stacked{
+			position: absolute;
+			margin: 0;
+			padding-left: 300px;
+
+		}
+	}
+}
+
+
+
+
+
+// COMPONENTES
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  top: 9px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+//----
+.hidden{
+	display: none;
+	opacity: 0;
+}

@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+<head>
+	<meta chartset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<link rel="stylesheet" type="text/css" href="nl/nl.css">
+
+</head>
+<body>
+
+	<nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+					<img src="imagenes/hcwork.svg" style="max-width: 50px;">
+				</div>
+				<div class="col-sm-5 text-center">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2000px-Walmart_logo.svg.png" style="max-width: 120px;">
+				</div>
+				<div class="col-sm-5 text-right">
+					<article class="user-nav">
+				        <div class="notifications">
+				          <span class="fa fa-bell" id="notificaciones"></span>
+
+				          <section class="notifications-panel hidden">
+				            <article class="well">
+				              <div class="text">
+				                <h6>Nuevo Ingreso</h6>
+				                <h5>Alejandro Gómez Díaz</h5>
+				                <a href=""><small>Dale la bienvenida</small></a>
+				              </div>
+				            </article>
+
+				             <article class="well admin">
+				              <div class="text">
+				                <h6>Pedido de vacaciones</h6>
+				                <h5>Daniel Salaberry</h5>
+				                <a href=""><small>ver más</small></a>
+				              </div>
+				            </article>
+
+				             <article class="well">              
+				              <div class="text">
+				                <h6>Nueva vacante</h6>
+				                <h5>Desarrollador Java</h5>
+				                <a href=""><small>ver más</small></a>
+				              </div>
+				            </article>
+
+				             <article>
+				              <div class="text">
+				                <h6>Pedido de vacaciones</h6>
+				                <h5>Daniel Salaberry</h5>
+				                <a href=""><small>Dale la bienvenida</small></a>
+				              </div>
+				            </article>
+				          </section>
+				        </div>
+  						<div class="user" id="user">
+  							
+  						
+							<img src="http://placehold.it/100x100" class="img-circle">
+							<h4>Enrique Martín Morales</h4> <span class="label label-primary">ADMIN</span>
+						</div>
+			          <div class="user-options hidden">
+			            <ul>
+			              <li>Selfservice 
+			                <label class="switch">
+			                  <input type="checkbox">
+			                  <span class="slider round"></span>
+			                </label>
+			                Admin</li>
+			                <hr>
+			              <li><span class="fa fa-user"></span> Mi perfil</li>
+			              <li><span class="fa fa-gear"></span> Configuración</li>
+			              <li><span class="fa fa-sing-out"></span> Cerrar sesión</li>
+			            </ul>
+			       
+						</div>
+
+						
+					</article>
+
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="estructura">
+		<div class="menu-lateral">
+			<div class="text-right">
+				<span class="ion-pin" id="stacked"></span>
+			</div>
+			<ul class="menu">
+				<li>
+					<div>
+						<p>Configuración</p><span class="fa fa-building"></span>
+					</div>
+				</li>
+				<li class="selected">
+					<div><p>Liquidación</p><span class="fa fa-money"></span>
+					</div>
+				</li>
+				
+				<li>
+					<div>
+						<p>Ciminetos Fundacionales</p><span class="fa fa-building"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Estructura / Organigrama</p><span class="fa fa-sitemap"></span>
+					</div>
+				</li>
+
+			
+				<li class="submenu">
+					<div><p>Compensación y beneficios</p> <span class="fa fa-briefcase"></span></div>
+					<ul>
+						<li><div><p>Crear matriz de valuación</p><span class="ion-star"></span></div></li>
+						<li class="selected"><div><p>Simulador de valuación</p><span class="ion-star"></span></div></li>
+						<li><div><p>Valuación</p><span class="ion-star"></span></div></li>
+						<li><div><p>Estructura</p><span class="ion-star"></span></div></li>
+						<li><div><p>Gestión de Beneficios</p><span class="ion-star"></span></div></li>
+						<li><div><p>Estudio de Salarios</p><span class="ion-star"></span></div></li>
+						<li><div><p>Reportes generales</p><span class="ion-star"></span></div></li>
+						<li><div><p>Reportes descriptores</p><span class="ion-star"></span></div></li>
+						<li><div><p>Permisos</p><span class="ion-star"></span></div></li>
+						<li><div><p>Tiempo y Asistencia</p><span class="ion-star"></span></div></li>
+						<li><div><p>Core</p><span class="ion-star"></span></div></li>
+						<li><div><p>Asignacion turno/esquema</p><span class="ion-star"></span></div></li>
+						<li><div><p>Carga de novedades</p><span class="ion-star"></span></div></li>
+						<li><div><p>Carga fichadas</p><span class="ion-star"></span></div></li>
+						<li><div><p>Creacion de esquema</p><span class="ion-star"></span></div></li>
+						<li><div><p>Creacion de tramo</p><span class="ion-star"></span></div></li>
+						<li><div><p>Creacion items</p><span class="ion-star"></span></div></li>
+					</ul>
+				</li>
+
+				<li>
+					<div>
+						<p>Tiempo y asistencia</p><span class="fa fa-clock-o"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Vacaciones</p><span class="fa fa-plane"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Recruting</p><span class="fa fa-search"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Gestión del clima</p><span class="fa fa-envelope"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Capacitación</p><span class="ion-star"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Gestión Plan de carrera y CR</p><span class="ion-star"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Comunicación interna</p><span class="ion-star"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Buzón de sugerencias</p><span class="ion-star"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Dimensión RESE</p><span class="ion-star"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Gestión WLB</p><span class="ion-star"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Gestión Teletrabajo</p><span class="ion-star"></span>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<p>Reportes generales</p><span class="ion-star"></span>
+					</div>
+				</li>
+
+				<li class="selected submenu">
+					<div><p>Tablero descripción</p> <span class="ion-star"></span></div>
+					<ul>
+						<li><div><p>Crear matriz de valuación</p><span class="ion-star"></span></div></li>
+						<li class="selected"><div><p>Simulador de valuación</p><span class="ion-star"></span></div></li>
+						<li><div><p>Valuación</p><span class="ion-star"></span></div></li>
+						<li><div><p>Estructura</p><span class="ion-star"></span></div></li>
+						<li><div><p>Gestión de Beneficios</p><span class="ion-star"></span></div></li>
+						<li><div><p>Estudio de Salarios</p><span class="ion-star"></span></div></li>
+						<li><div><p>Reportes generales</p><span class="ion-star"></span></div></li>
+						<li><div><p>Reportes descriptores</p><span class="ion-star"></span></div></li>
+						<li><div><p>Permisos</p><span class="ion-star"></span></div></li>
+						<li><div><p>Tiempo y Asistencia</p><span class="ion-star"></span></div></li>
+						<li><div><p>Core</p><span class="ion-star"></span></div></li>
+						<li><div><p>Asignacion turno/esquema</p><span class="ion-star"></span></div></li>
+						<li><div><p>Carga de novedades</p><span class="ion-star"></span></div></li>
+						<li><div><p>Carga fichadas</p><span class="ion-star"></span></div></li>
+						<li><div><p>Creacion de esquema</p><span class="ion-star"></span></div></li>
+						<li><div><p>Creacion de tramo</p><span class="ion-star"></span></div></li>
+						<li><div><p>Creacion items</p><span class="ion-star"></span></div></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+
+		<main>
+			<div class="header"></div>
+			<div class="contenido">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<h2>Contenido</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+	</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).on("ready", function(){
+		$(".menu-lateral").on("mouseover", function(){
+			$(this).css("left","0");
+			$("#stacked").css("opacity","1");
+			$("main").css("overflow","hidden");
+		})
+
+
+
+		stacked=false;
+
+		$("#stacked").on("click",function(){
+			stacked=!stacked;
+			$(".menu-lateral").toggleClass("stacked");
+			$("main").toggleClass("stacked");
+
+			if(stacked){
+				$("#stacked").css("transform","rotate(0deg)");
+			}else{
+				$("#stacked").css("transform","rotate(60deg)");
+			}
+
+		})
+		
+
+		$(".menu-lateral").on("mouseout", function(){
+			if(!stacked){
+				$(this).css("left","-250px");
+				$("#stacked").css("opacity","0");
+			}
+			$("main").css("overflow","auto");
+		})
+
+		$("#notificaciones").on("click", function(){
+			$(".notifications-panel").toggleClass("hidden");
+		})		
+
+		$("#user").on("click", function(){
+			$(".user-options").toggleClass("hidden");
+		})
+
+		$(".submenu ul").css({
+			"height": "0",
+			"overflow": "hidden",
+		})
+
+		$(".submenu").on("click", function(){
+			$(this).toggleClass("selected")
+			$(this).children("ul").css("height","auto")
+			$(this).children("ul").css("overflow","auto")
+		})		
+	})
+</script>
+</body>
+</html>
