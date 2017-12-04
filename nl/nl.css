@@ -5,25 +5,19 @@ html, body {
   font-family: roboto;
   font-weight: 400; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway; }
+
 nav {
   padding: 15px 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f0404+0,23538a+100 */
-  background: #0f0404;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #0f0404 0%, #23538a 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #0f0404 0%, #23538a 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #0f0404 0%, #23538a 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0404', endColorstr='#23538a',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  background: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999; }
   nav .user-nav {
-    color: white;
+    color: #332233;
     display: flex;
     align-items: center; }
     nav .user-nav .user {
@@ -141,16 +135,16 @@ nav {
     left: -250px;
     transition: .5s;
     z-index: 100;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#408fdd+0,23538a+93 */
-    background: #408fdd;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd4845+0,fd8637+100 */
+    background: #dd4845;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #408fdd 0%, #23538a 93%);
+    background: -moz-linear-gradient(-45deg, #dd4845 0%, #fd8637 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #408fdd 0%, #23538a 93%);
+    background: -webkit-linear-gradient(-45deg, #dd4845 0%, #fd8637 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #408fdd 0%, #23538a 93%);
+    background: linear-gradient(135deg, #dd4845 0%, #fd8637 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#408fdd', endColorstr='#23538a',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4845', endColorstr='#fd8637',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */
     overflow-x: scroll;
     padding-top: 70px;
