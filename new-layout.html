@@ -18,13 +18,13 @@
 	<nav>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-2">
+				<div class="col-sm-4">
 					<img src="imagenes/hcwork.svg" style="max-width: 50px;">
 				</div>
-				<div class="col-sm-5 text-center">
+				<div class="col-sm-4 text-center">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2000px-Walmart_logo.svg.png" style="max-width: 120px;">
 				</div>
-				<div class="col-sm-5 text-right">
+				<div class="col-sm-4 text-right">
 					<article class="user-nav">
 				        <div class="notifications">
 				          <span class="fa fa-bell" id="notificaciones"></span>
@@ -248,7 +248,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-12">
-							<h2>Contenido</h2>
+							<h1>Contenido</h1>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -266,7 +266,59 @@
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-							<h2>Contenido</h2>
+
+							<a class="btn btn-primary">Botón principal</a>
+
+							<a class="btn btn-success">Botón principal</a>
+
+							<a class="btn btn-default">Botón principal</a>
+
+							<a class="btn btn-warning">Botón principal</a>
+
+							<a class="btn btn-error">Botón error</a>
+
+
+							<h3>Contenido</h3>
+
+							<div class="row">
+								<div class="col-md-4">
+									<form>
+										<div class="form-group">
+											<label>Nombre</label>
+											<input class="form-control">
+										</div>
+
+										<div class="form-group">
+											<label>Apellido</label>
+											<input class="form-control">
+										</div>
+
+										<div class="form-group has-error">
+											<label>Email</label>
+											<small class="error pull-right">Ingresar una dirección de email válida</small>
+											<input class="form-control">
+										</div>
+
+										<div class="form-group has-warning">
+											<label>Email</label>
+											<small class="error pull-right">Información duplicada</small>
+											<input class="form-control">
+										</div>
+
+										<div class="form-group has-success">
+											<label>Email</label>
+											<small class="error pull-right">La contraseña es segura</small>
+											<input class="form-control">
+										</div>
+									</form>
+								</div>
+							</div>
+							
+
+							<a class="btn btn-error" id="error-alert">ver error alert</a>
+							<a class="btn btn-success" id="success-alert">ver success alert</a>
+							<a class="btn btn-warning" id="warning-alert">ver warning alert</a>
+							<h4>Contenido</h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -275,7 +327,7 @@
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-							<h2>Contenido</h2>
+							<h5>Contenido</h5>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -284,16 +336,7 @@
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-							<h2>Contenido</h2>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-							<h2>Contenido</h2>
+							<h6>Contenido</h6>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -431,6 +474,49 @@
 
 
 
+<div class="error-alert" id="error1">
+	<article class="alert">
+		<header>
+			<span class="fa fa-times-circle"></span>
+		</header>
+		<div class="error-message">
+			<h3>Ocurrió un error</h3>
+			<h5>La acción que está intentando realizar no es válida</h5>
+		</div>
+
+		<a class="btn btn-primary" id="error1close">aceptar</a>
+	</article>
+</div>
+
+
+<div class="success-alert" id="success1">
+	<article class="alert">
+		<header>
+			<span class="fa fa-check-circle"></span>
+		</header>
+		<div class="error-message">
+			<h3>¡Éxito!</h3>
+			<h5>Información guardada con éxito</h5>
+		</div>
+
+		<a class="btn btn-primary" id="success1close">aceptar</a>
+	</article>
+</div>
+
+<div class="warning-alert" id="warning1">
+	<article class="alert">
+		<header>
+			<span class="fa fa-exclamation-circle"></span>
+		</header>
+		<div class="error-message">
+			<h3>Atención</h3>
+			<h5>Información duplicada</h5>
+		</div>
+
+		<a class="btn btn-primary" id="warning1close">aceptar</a>
+	</article>
+</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -438,6 +524,55 @@
 
 <script type="text/javascript">
 	$(document).on("ready", function(){
+
+
+		$("#error-alert").on("click", function(){
+			$("#error1").css({
+				"display":"flex",
+				"opacity":"1",
+			})
+		})
+
+
+		$("#error1close").on("click", function(){
+			$("#error1").css({
+				"display":"none",
+				"opacity":"0",
+			})
+		})
+
+
+
+		$("#success-alert").on("click", function(){
+			$("#success1").css({
+				"display":"flex",
+				"opacity":"1",
+			})
+		})
+
+
+		$("#success1close").on("click", function(){
+			$("#success1").css({
+				"display":"none",
+				"opacity":"0",
+			})
+		})
+
+		$("#warning-alert").on("click", function(){
+			$("#warning1").css({
+				"display":"flex",
+				"opacity":"1",
+			})
+		})
+
+
+		$("#warning1close").on("click", function(){
+			$("#warning1").css({
+				"display":"none",
+				"opacity":"0",
+			})
+		})
+
 		$(".menu-lateral").on("mouseover", function(){
 			$(this).css("left","0");
 			$("#stacked").css("opacity","1");

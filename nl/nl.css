@@ -1,12 +1,124 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700");
 html, body {
   height: 100%;
-  font-family: roboto;
+  font-family: Roboto;
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Raleway; }
+  font-family: Raleway;
+  font-weight: 700; }
+
+p {
+  font-size: 13px; }
+
+.btn-primary {
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-family: Raleway;
+  border: none;
+  background: #2089AF;
+  transition: .5s;
+  color: white; }
+  .btn-primary:hover {
+    background: #14566e;
+    color: white; }
+  .btn-primary.btn-sm {
+    padding: 5px 17px; }
+
+.btn-success {
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-family: Raleway;
+  border: none;
+  background: #7FBC3C;
+  transition: .5s;
+  color: white; }
+  .btn-success:hover {
+    background: #588229;
+    color: white; }
+  .btn-success.btn-sm {
+    padding: 5px 17px; }
+
+.btn-error {
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-family: Raleway;
+  border: none;
+  background: #F1453D;
+  transition: .5s;
+  color: white; }
+  .btn-error:hover {
+    background: #d2180f;
+    color: white; }
+  .btn-error.btn-sm {
+    padding: 5px 17px; }
+
+.btn-default {
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-family: Raleway;
+  border: none;
+  background: white;
+  transition: .5s;
+  color: #464646;
+  border: 1px solid #464646; }
+  .btn-default:hover {
+    background: #d9d9d9;
+    color: #464646; }
+  .btn-default.btn-sm {
+    padding: 5px 17px; }
+
+.btn-warning {
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-family: Raleway;
+  border: none;
+  background: #FABF2C;
+  transition: .5s;
+  color: white; }
+  .btn-warning:hover {
+    background: #d49905;
+    color: white; }
+  .btn-warning.btn-sm {
+    padding: 5px 17px; }
+
+.has-error label {
+  color: #F1453D; }
+.has-error .form-control {
+  border-color: #F1453D; }
+.has-error .error {
+  background: #F1453D;
+  padding: 3px;
+  border-radius: 2px;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 11px; }
+
+.has-warning label {
+  color: #FABF2C; }
+.has-warning .form-control {
+  border-color: #FABF2C; }
+.has-warning .error {
+  background: #FABF2C;
+  padding: 3px;
+  border-radius: 2px;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 11px; }
+
+.has-success label {
+  color: #7FBC3C; }
+.has-success .form-control {
+  border-color: #7FBC3C; }
+.has-success .error {
+  background: #7FBC3C;
+  padding: 3px;
+  border-radius: 2px;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 11px; }
 
 nav {
   padding: 15px 0;
@@ -135,19 +247,19 @@ nav {
     left: -250px;
     transition: .5s;
     z-index: 100;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd4845+0,fd8637+100 */
-    background: #dd4845;
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #dd4845 0%, #fd8637 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #dd4845 0%, #fd8637 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #dd4845 0%, #fd8637 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4845', endColorstr='#fd8637',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */
     overflow-x: scroll;
     padding-top: 70px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#303b4c+0,2d5f93+100 */
+    background: #303b4c;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #303b4c 0%, #2d5f93 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #303b4c 0%, #2d5f93 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #303b4c 0%, #2d5f93 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303b4c', endColorstr='#2d5f93',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
     box-sizing: border-box; }
     .estructura .menu-lateral.stacked {
       left: 0; }
@@ -273,5 +385,134 @@ input:checked + .slider:before {
 .hidden {
   display: none;
   opacity: 0; }
+
+.error-alert {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+  transition: 1s; }
+  .error-alert .alert {
+    width: 250px;
+    background: white;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    padding-bottom: 20px; }
+    .error-alert .alert header {
+      background: #F1453D;
+      text-align: center;
+      padding: 30px 0; }
+      .error-alert .alert header span {
+        font-size: 50px;
+        color: white; }
+    .error-alert .alert .error-message {
+      padding: 10px;
+      text-align: center; }
+      .error-alert .alert .error-message h3 {
+        text-transform: uppercase;
+        font-size: 16px; }
+      .error-alert .alert .error-message h5 {
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 14px; }
+    .error-alert .alert .btn {
+      background: #F1453D;
+      color: white; }
+
+.success-alert {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+  transition: 1s; }
+  .success-alert .alert {
+    width: 250px;
+    background: white;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    padding-bottom: 20px; }
+    .success-alert .alert header {
+      background: #7FBC3C;
+      text-align: center;
+      padding: 30px 0; }
+      .success-alert .alert header span {
+        font-size: 50px;
+        color: white; }
+    .success-alert .alert .error-message {
+      padding: 10px;
+      text-align: center; }
+      .success-alert .alert .error-message h3 {
+        text-transform: uppercase;
+        font-size: 16px; }
+      .success-alert .alert .error-message h5 {
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 14px; }
+    .success-alert .alert .btn {
+      background: #7FBC3C;
+      color: white; }
+
+.warning-alert {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+  transition: 1s; }
+  .warning-alert .alert {
+    width: 250px;
+    background: white;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    padding-bottom: 20px; }
+    .warning-alert .alert header {
+      background: #FABF2C;
+      text-align: center;
+      padding: 30px 0; }
+      .warning-alert .alert header span {
+        font-size: 50px;
+        color: white; }
+    .warning-alert .alert .error-message {
+      padding: 10px;
+      text-align: center; }
+      .warning-alert .alert .error-message h3 {
+        text-transform: uppercase;
+        font-size: 16px; }
+      .warning-alert .alert .error-message h5 {
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 14px; }
+    .warning-alert .alert .btn {
+      background: #FABF2C;
+      color: white; }
 
 /*# sourceMappingURL=nl.css.map */
